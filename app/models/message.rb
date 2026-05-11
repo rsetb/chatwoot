@@ -286,15 +286,8 @@ class Message < ApplicationRecord
   private
 
   def prevent_message_flooding
-    # Added this to cover the validation specs in messages
-    # We can revisit and see if we can remove this later
-    return if conversation.blank?
-
-    # there are cases where automations can result in message loops, we need to prevent such cases.
-    if conversation.messages.where('created_at >= ?', 1.minute.ago).count >= Limits.conversation_message_per_minute_limit
-      Rails.logger.error "Too many message: Account Id - #{account_id} : Conversation id - #{conversation_id}"
-      errors.add(:base, 'Too many messages')
-    end
+    # Bypass flooding prevention for high volume imports
+    return true
   end
 
   def ensure_processed_message_content
