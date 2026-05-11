@@ -1,0 +1,2122 @@
+Commit: feat: unlock enterprise features and license bypass 
+##########################################
+### Download Github Archive Started...
+### Mon, 11 May 2026 18:21:49 GMT
+##########################################
+
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 30B
+#1 transferring dockerfile: 4.49kB 0.7s done
+#1 WARN: FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 2)
+#1 DONE 0.8s
+
+#2 [internal] load metadata for docker.io/library/node:24-alpine
+#2 DONE 0.7s
+
+#3 [internal] load metadata for docker.io/library/ruby:3.4.4-alpine3.21
+#3 DONE 0.8s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 222B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 DONE 0.0s
+
+#6 [node 1/1] FROM docker.io/library/node:24-alpine@sha256:d1b3b4da11eefd5941e7f0b9cf17783fc99d9c6fc34884a665f40a06dbdfc94f
+#6 resolve docker.io/library/node:24-alpine@sha256:d1b3b4da11eefd5941e7f0b9cf17783fc99d9c6fc34884a665f40a06dbdfc94f 0.1s done
+#6 DONE 0.1s
+
+#7 [pre-builder  1/19] FROM docker.io/library/ruby:3.4.4-alpine3.21@sha256:5bdfa2312f3f0bc9bd077e954c943652155a093db228af978873ff92389300d3
+#7 resolve docker.io/library/ruby:3.4.4-alpine3.21@sha256:5bdfa2312f3f0bc9bd077e954c943652155a093db228af978873ff92389300d3
+#7 resolve docker.io/library/ruby:3.4.4-alpine3.21@sha256:5bdfa2312f3f0bc9bd077e954c943652155a093db228af978873ff92389300d3 0.1s done
+#7 ...
+
+#6 [node 1/1] FROM docker.io/library/node:24-alpine@sha256:d1b3b4da11eefd5941e7f0b9cf17783fc99d9c6fc34884a665f40a06dbdfc94f
+#6 DONE 0.4s
+
+#7 [pre-builder  1/19] FROM docker.io/library/ruby:3.4.4-alpine3.21@sha256:5bdfa2312f3f0bc9bd077e954c943652155a093db228af978873ff92389300d3
+#7 DONE 0.4s
+
+#5 [internal] load build context
+#5 ...
+
+#6 [node 1/1] FROM docker.io/library/node:24-alpine@sha256:d1b3b4da11eefd5941e7f0b9cf17783fc99d9c6fc34884a665f40a06dbdfc94f
+#6 sha256:3eebacc30b80dca2db4fba20ee2c2562ae69dbbdc307fcee75b49cf859cf63e4 1.26MB / 1.26MB 0.1s done
+#6 sha256:1ba15d4bb83a5da0244b0ca03df5cac1a19a914c5b876543cb1065d7fddbc9d5 446B / 446B 0.1s done
+#6 sha256:d7319775d025f51b0d7ee7f1224231b07f98b38a21909b5a7e2572e083dcb50a 51.51MB / 51.51MB 2.7s done
+#6 DONE 3.1s
+
+#5 [internal] load build context
+#5 transferring context: 40.22MB 4.8s
+#5 transferring context: 155.51MB 8.0s done
+#5 DONE 8.0s
+
+#8 [stage-2 2/9] RUN apk update && apk add --no-cache   build-base   openssl   tzdata   postgresql-client   imagemagick   git   vips   && gem install bundler -v "2.5.16"
+#8 0.398 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/APKINDEX.tar.gz
+#8 0.744 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/community/x86_64/APKINDEX.tar.gz
+#8 1.876 v3.21.7-58-gf2ce0c22cfb [https://dl-cdn.alpinelinux.org/alpine/v3.21/main]
+#8 1.876 v3.21.7-59-g6bbf7aed84d [https://dl-cdn.alpinelinux.org/alpine/v3.21/community]
+#8 1.876 OK: 25408 distinct packages available
+#8 2.142 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/APKINDEX.tar.gz
+#8 2.364 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/community/x86_64/APKINDEX.tar.gz
+#8 3.262 (1/106) Upgrading musl (1.2.5-r9 -> 1.2.5-r11)
+#8 3.307 (2/106) Upgrading libcrypto3 (3.3.3-r0 -> 3.3.7-r0)
+#8 3.427 (3/106) Upgrading libssl3 (3.3.3-r0 -> 3.3.7-r0)
+#8 3.520 (4/106) Installing jansson (2.14-r4)
+#8 3.520 (5/106) Installing libstdc++ (14.2.0-r4)
+#8 3.520 (6/106) Installing zstd-libs (1.5.6-r2)
+#8 3.594 (7/106) Installing binutils (2.43.1-r3)
+#8 3.757 (8/106) Installing libmagic (5.46-r2)
+#8 3.881 (9/106) Installing file (5.46-r2)
+#8 3.896 (10/106) Installing libgomp (14.2.0-r4)
+#8 3.915 (11/106) Installing libatomic (14.2.0-r4)
+#8 3.930 (12/106) Installing isl26 (0.26-r1)
+#8 3.998 (13/106) Installing mpfr4 (4.2.1-r0)
+#8 4.027 (14/106) Installing mpc1 (1.3.1-r1)
+#8 4.051 (15/106) Installing gcc (14.2.0-r4)
+#8 7.284 (16/106) Installing libstdc++-dev (14.2.0-r4)
+#8 7.796 (17/106) Installing musl-dev (1.2.5-r11)
+#8 ...
+
+#6 [node 1/1] FROM docker.io/library/node:24-alpine@sha256:d1b3b4da11eefd5941e7f0b9cf17783fc99d9c6fc34884a665f40a06dbdfc94f
+#6 extracting sha256:d7319775d025f51b0d7ee7f1224231b07f98b38a21909b5a7e2572e083dcb50a 5.1s done
+#6 DONE 8.2s
+
+#9 [pre-builder  2/19] RUN apk update && apk add --no-cache   openssl   tar   build-base   tzdata   postgresql-dev   postgresql-client   git   curl   xz   && mkdir -p /var/app   && gem install bundler -v "2.5.16"
+#9 0.398 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/APKINDEX.tar.gz
+#9 0.833 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/community/x86_64/APKINDEX.tar.gz
+#9 2.145 v3.21.7-58-gf2ce0c22cfb [https://dl-cdn.alpinelinux.org/alpine/v3.21/main]
+#9 2.145 v3.21.7-59-g6bbf7aed84d [https://dl-cdn.alpinelinux.org/alpine/v3.21/community]
+#9 2.145 OK: 25408 distinct packages available
+#9 2.375 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/APKINDEX.tar.gz
+#9 2.708 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/community/x86_64/APKINDEX.tar.gz
+#9 3.610 (1/67) Upgrading musl (1.2.5-r9 -> 1.2.5-r11)
+#9 3.707 (2/67) Upgrading libcrypto3 (3.3.3-r0 -> 3.3.7-r0)
+#9 3.829 (3/67) Upgrading libssl3 (3.3.3-r0 -> 3.3.7-r0)
+#9 3.853 (4/67) Installing jansson (2.14-r4)
+#9 3.864 (5/67) Installing libstdc++ (14.2.0-r4)
+#9 3.904 (6/67) Installing zstd-libs (1.5.6-r2)
+#9 3.926 (7/67) Installing binutils (2.43.1-r3)
+#9 4.264 (8/67) Installing libmagic (5.46-r2)
+#9 4.430 (9/67) Installing file (5.46-r2)
+#9 4.472 (10/67) Installing libgomp (14.2.0-r4)
+#9 4.529 (11/67) Installing libatomic (14.2.0-r4)
+#9 4.583 (12/67) Installing isl26 (0.26-r1)
+#9 4.721 (13/67) Installing mpfr4 (4.2.1-r0)
+#9 4.811 (14/67) Installing mpc1 (1.3.1-r1)
+#9 4.872 (15/67) Installing gcc (14.2.0-r4)
+#9 ...
+
+#6 [node 1/1] FROM docker.io/library/node:24-alpine@sha256:d1b3b4da11eefd5941e7f0b9cf17783fc99d9c6fc34884a665f40a06dbdfc94f
+#6 extracting sha256:3eebacc30b80dca2db4fba20ee2c2562ae69dbbdc307fcee75b49cf859cf63e4 0.1s done
+#6 DONE 8.3s
+
+#6 [node 1/1] FROM docker.io/library/node:24-alpine@sha256:d1b3b4da11eefd5941e7f0b9cf17783fc99d9c6fc34884a665f40a06dbdfc94f
+#6 extracting sha256:1ba15d4bb83a5da0244b0ca03df5cac1a19a914c5b876543cb1065d7fddbc9d5 0.0s done
+#6 DONE 8.4s
+
+#8 [stage-2 2/9] RUN apk update && apk add --no-cache   build-base   openssl   tzdata   postgresql-client   imagemagick   git   vips   && gem install bundler -v "2.5.16"
+#8 8.183 (18/106) Installing g++ (14.2.0-r4)
+#8 9.493 (19/106) Installing make (4.4.1-r2)
+#8 9.551 (20/106) Installing fortify-headers (1.1-r5)
+#8 9.624 (21/106) Installing patch (2.7.6-r10)
+#8 9.653 (22/106) Installing build-base (0.5-r3)
+#8 9.653 (23/106) Installing brotli-libs (1.1.0-r2)
+#8 9.675 (24/106) Installing c-ares (1.34.6-r0)
+#8 9.690 (25/106) Installing libunistring (1.2-r0)
+#8 9.724 (26/106) Installing libidn2 (2.3.7-r0)
+#8 9.736 (27/106) Installing nghttp2-libs (1.69.0-r0)
+#8 9.744 (28/106) Installing libpsl (0.21.5-r3)
+#8 9.750 (29/106) Installing libcurl (8.14.1-r2)
+#8 9.771 (30/106) Installing libexpat (2.7.5-r0)
+#8 9.777 (31/106) Installing pcre2 (10.43-r0)
+#8 9.795 (32/106) Installing git (2.47.3-r0)
+#8 10.01 (33/106) Installing git-init-template (2.47.3-r0)
+#8 10.08 (34/106) Installing libxau (1.0.11-r4)
+#8 10.08 (35/106) Installing libmd (1.1.0-r0)
+#8 10.09 (36/106) Installing libbsd (0.12.2-r0)
+#8 10.10 (37/106) Installing libxdmcp (1.1.5-r1)
+#8 10.10 (38/106) Installing libxcb (1.16.1-r0)
+#8 10.14 (39/106) Installing libx11 (1.8.10-r0)
+#8 10.32 (40/106) Installing libxext (1.3.6-r2)
+#8 10.40 (41/106) Installing libbz2 (1.0.8-r6)
+#8 10.48 (42/106) Installing fftw-double-libs (3.3.10-r6)
+#8 10.65 (43/106) Installing libpng (1.6.57-r0)
+#8 10.74 (44/106) Installing freetype (2.13.3-r0)
+#8 10.86 (45/106) Installing fontconfig (2.15.0-r1)
+#8 10.92 (46/106) Installing lcms2 (2.19-r0)
+#8 10.93 (47/106) Installing libltdl (2.4.7-r3)
+#8 10.95 (48/106) Installing xz-libs (5.8.3-r0)
+#8 10.96 (49/106) Installing libxml2 (2.13.9-r0)
+#8 10.99 (50/106) Installing imagemagick-libs (7.1.1.41-r0)
+#8 11.08 (51/106) Installing imagemagick (7.1.1.41-r0)
+#8 11.20 (52/106) Installing openssl (3.3.7-r0)
+#8 11.31 (53/106) Installing postgresql-common (1.2-r1)
+#8 11.34 Executing postgresql-common-1.2-r1.pre-install
+#8 11.39 (54/106) Installing lz4-libs (1.10.0-r0)
+#8 11.39 (55/106) Installing libpq (17.9-r0)
+#8 11.41 (56/106) Installing ncurses-terminfo-base (6.5_p20241006-r3)
+#8 11.42 (57/106) Installing libncursesw (6.5_p20241006-r3)
+#8 11.44 (58/106) Installing readline (8.2.13-r0)
+#8 11.45 (59/106) Installing postgresql17-client (17.9-r0)
+#8 11.51 (60/106) Installing tzdata (2026b-r0)
+#8 11.65 (61/106) Installing openexr-libiex (3.3.2-r0)
+#8 11.67 (62/106) Installing openexr-libilmthread (3.3.2-r0)
+#8 11.67 (63/106) Installing imath (3.1.12-r0)
+#8 11.68 (64/106) Installing libdeflate (1.22-r0)
+#8 11.69 (65/106) Installing openexr-libopenexrcore (3.3.2-r0)
+#8 11.72 (66/106) Installing openexr-libopenexr (3.3.2-r0)
+#8 11.76 (67/106) Installing acl-libs (2.3.2-r1)
+#8 11.77 (68/106) Installing libarchive (3.8.3-r0)
+#8 11.79 (69/106) Installing libxrender (0.9.11-r5)
+#8 11.80 (70/106) Installing pixman (0.43.4-r1)
+#8 11.82 (71/106) Installing cairo (1.18.4-r0)
+#8 11.85 (72/106) Installing cfitsio (4.5.0-r0)
+#8 11.91 (73/106) Installing cgif (0.4.1-r0)
+#8 11.91 (74/106) Installing libexif (0.6.24-r2)
+#8 11.93 (75/106) Installing libintl (0.22.5-r0)
+#8 11.93 (76/106) Installing libeconf (0.6.3-r0)
+#8 11.94 (77/106) Installing libblkid (2.40.4-r1)
+#8 11.95 (78/106) Installing libmount (2.40.4-r1)
+#8 11.96 (79/106) Installing glib (2.82.5-r0)
+#8 12.06 (80/106) Installing libhwy (1.0.7-r0)
+#8 12.07 (81/106) Installing libimagequant (4.2.2-r0)
+#8 12.10 (82/106) Installing libjpeg-turbo (3.0.4-r0)
+#8 12.17 (83/106) Installing imagemagick-jpeg (7.1.1.41-r0)
+#8 12.24 (84/106) Installing openjpeg (2.5.2-r0)
+#8 12.31 (85/106) Installing libxft (2.3.8-r3)
+#8 12.37 (86/106) Installing fribidi (1.0.16-r0)
+#8 12.44 (87/106) Installing graphite2 (1.3.14-r6)
+#8 12.51 (88/106) Installing harfbuzz (9.0.0-r1)
+#8 12.62 (89/106) Installing pango (1.54.0-r1)
+#8 12.70 (90/106) Installing imagemagick-pango (7.1.1.41-r0)
+#8 12.77 (91/106) Installing libdav1d (1.5.0-r0)
+#8 12.89 (92/106) Installing pkgconf (2.3.0-r0)
+#8 12.96 (93/106) Installing shared-mime-info (2.4-r2)
+#8 13.06 (94/106) Installing libsharpyuv (1.4.0-r0)
+#8 13.13 (95/106) Installing libwebp (1.4.0-r0)
+#8 13.21 (96/106) Installing libwebpdemux (1.4.0-r0)
+#8 13.28 (97/106) Installing libwebpmux (1.4.0-r0)
+#8 13.35 (98/106) Installing imagemagick-webp (7.1.1.41-r0)
+#8 13.42 (99/106) Installing tiff (4.7.1-r0)
+#8 13.52 (100/106) Installing imagemagick-tiff (7.1.1.41-r0)
+#8 13.60 (101/106) Installing gdk-pixbuf (2.42.12-r1)
+#8 13.68 (102/106) Installing librsvg (2.59.2-r0)
+#8 13.90 (103/106) Installing imagemagick-svg (7.1.1.41-r0)
+#8 13.97 (104/106) Installing libspng (0.7.4-r0)
+#8 14.03 (105/106) Installing vips (8.15.3-r5)
+#8 14.20 (106/106) Installing vips-magick (8.15.3-r5)
+#8 14.28 Executing busybox-1.37.0-r12.trigger
+#8 14.32 Executing postgresql-common-1.2-r1.trigger
+#8 14.34 * Setting postgresql17 as the default version
+#8 15.52 Executing glib-2.82.5-r0.trigger
+#8 15.54 Executing shared-mime-info-2.4-r2.trigger
+#8 16.50 Executing gdk-pixbuf-2.42.12-r1.trigger
+#8 16.53 OK: 307 MiB in 123 packages
+#8 18.76 Successfully installed bundler-2.5.16
+#8 18.76 1 gem installed
+#8 DONE 19.0s
+
+#10 [stage-2 3/9] COPY --from=node /usr/local/bin/node /usr/local/bin/
+#10 DONE 0.5s
+
+#9 [pre-builder  2/19] RUN apk update && apk add --no-cache   openssl   tar   build-base   tzdata   postgresql-dev   postgresql-client   git   curl   xz   && mkdir -p /var/app   && gem install bundler -v "2.5.16"
+#9 9.414 (16/67) Installing libstdc++-dev (14.2.0-r4)
+#9 9.894 (17/67) Installing musl-dev (1.2.5-r11)
+#9 10.10 (18/67) Installing g++ (14.2.0-r4)
+#9 10.90 (19/67) Installing make (4.4.1-r2)
+#9 10.91 (20/67) Installing fortify-headers (1.1-r5)
+#9 10.92 (21/67) Installing patch (2.7.6-r10)
+#9 10.93 (22/67) Installing build-base (0.5-r3)
+#9 10.93 (23/67) Installing brotli-libs (1.1.0-r2)
+#9 10.95 (24/67) Installing c-ares (1.34.6-r0)
+#9 10.97 (25/67) Installing libunistring (1.2-r0)
+#9 11.01 (26/67) Installing libidn2 (2.3.7-r0)
+#9 11.09 (27/67) Installing nghttp2-libs (1.69.0-r0)
+#9 11.09 (28/67) Installing libpsl (0.21.5-r3)
+#9 11.11 (29/67) Installing libcurl (8.14.1-r2)
+#9 11.15 (30/67) Installing curl (8.14.1-r2)
+#9 11.16 (31/67) Installing libexpat (2.7.5-r0)
+#9 11.17 (32/67) Installing pcre2 (10.43-r0)
+#9 11.19 (33/67) Installing git (2.47.3-r0)
+#9 11.41 (34/67) Installing git-init-template (2.47.3-r0)
+#9 11.41 (35/67) Installing openssl (3.3.7-r0)
+#9 11.44 (36/67) Installing postgresql-common (1.2-r1)
+#9 11.45 Executing postgresql-common-1.2-r1.pre-install
+#9 11.49 (37/67) Installing lz4-libs (1.10.0-r0)
+#9 11.51 (38/67) Installing libpq (17.9-r0)
+#9 11.53 (39/67) Installing ncurses-terminfo-base (6.5_p20241006-r3)
+#9 11.55 (40/67) Installing libncursesw (6.5_p20241006-r3)
+#9 11.56 (41/67) Installing readline (8.2.13-r0)
+#9 11.57 (42/67) Installing postgresql17-client (17.9-r0)
+#9 11.63 (43/67) Installing pkgconf (2.3.0-r0)
+#9 11.64 (44/67) Installing openssl-dev (3.3.7-r0)
+#9 11.69 (45/67) Installing libpq-dev (17.9-r0)
+#9 11.75 (46/67) Installing libecpg (17.9-r0)
+#9 11.77 (47/67) Installing libecpg-dev (17.9-r0)
+#9 11.82 (48/67) Installing clang18-headers (18.1.8-r2)
+#9 12.01 (49/67) Installing xz-libs (5.8.3-r0)
+#9 12.06 (50/67) Installing libxml2 (2.13.9-r0)
+#9 12.09 (51/67) Installing llvm18-libs (18.1.8-r2)
+#9 14.65 (52/67) Installing clang18-libs (18.1.8-r2)
+#9 16.01 (53/67) Installing llvm18-linker-tools (18.1.8-r2)
+#9 16.02 (54/67) Installing clang18 (18.1.8-r2)
+#9 16.05 (55/67) Installing icu-data-en (74.2-r1)
+#9 16.09 Executing icu-data-en-74.2-r1.post-install
+#9 16.10 (56/67) Installing icu-libs (74.2-r1)
+#9 16.10 *
+#9 16.10 * If you need ICU with non-English locales and legacy charset support, install
+#9 16.10 * package icu-data-full.
+#9 16.10 *
+#9 16.18 (57/67) Installing icu (74.2-r1)
+#9 16.20 (58/67) Installing icu-dev (74.2-r1)
+#9 16.28 (59/67) Installing llvm18 (18.1.8-r2)
+#9 18.51 (60/67) Installing lz4-dev (1.10.0-r0)
+#9 18.52 (61/67) Installing zstd (1.5.6-r2)
+#9 18.54 (62/67) Installing zstd-dev (1.5.6-r2)
+#9 18.54 (63/67) Installing postgresql17-dev (17.9-r0)
+#9 18.86 (64/67) Installing acl-libs (2.3.2-r1)
+#9 18.87 (65/67) Installing tar (1.35-r2)
+#9 18.89 (66/67) Installing tzdata (2026b-r0)
+#9 19.04 (67/67) Installing xz (5.8.3-r0)
+#9 19.05 Executing busybox-1.37.0-r12.trigger
+#9 19.07 Executing postgresql-common-1.2-r1.trigger
+#9 19.08 * Setting postgresql17 as the default version
+#9 ...
+
+#11 [stage-2 4/9] COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
+#11 DONE 0.8s
+
+#9 [pre-builder  2/19] RUN apk update && apk add --no-cache   openssl   tar   build-base   tzdata   postgresql-dev   postgresql-client   git   curl   xz   && mkdir -p /var/app   && gem install bundler -v "2.5.16"
+#9 ...
+
+#12 [stage-2 5/9] RUN if [ "production" != "production" ]; then   apk add --no-cache curl   && ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm   && ln -s /usr/local/lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx   && npm install -g pnpm@10.2.0   && pnpm --version;   fi
+#12 DONE 0.2s
+
+#9 [pre-builder  2/19] RUN apk update && apk add --no-cache   openssl   tar   build-base   tzdata   postgresql-dev   postgresql-client   git   curl   xz   && mkdir -p /var/app   && gem install bundler -v "2.5.16"
+#9 20.49 OK: 673 MiB in 84 packages
+#9 21.54 Successfully installed bundler-2.5.16
+#9 21.54 1 gem installed
+#9 DONE 21.6s
+
+#13 [pre-builder  3/19] COPY --from=node /usr/local/bin/node /usr/local/bin/
+#13 DONE 0.3s
+
+#14 [pre-builder  4/19] COPY --from=node /usr/local/lib/node_modules /usr/local/lib/node_modules
+#14 DONE 0.7s
+
+#15 [pre-builder  5/19] RUN ln -s /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/npm   && ln -s /usr/local/lib/node_modules/npm/bin/npx-cli.js /usr/local/bin/npx
+#15 DONE 0.2s
+
+#16 [pre-builder  6/19] RUN npm install -g pnpm@10.2.0
+#16 4.829 
+#16 4.829 added 1 package in 4s
+#16 4.829 
+#16 4.829 1 package is looking for funding
+#16 4.829   run `npm fund` for details
+#16 4.834 npm notice
+#16 4.834 npm notice New minor version of npm available! 11.12.1 -> 11.14.1
+#16 4.834 npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.14.1
+#16 4.834 npm notice To update run: npm install -g npm@11.14.1
+#16 4.834 npm notice
+#16 DONE 5.2s
+
+#17 [pre-builder  7/19] RUN echo 'export PNPM_HOME="/root/.local/share/pnpm"' >> /root/.shrc   && echo 'export PATH="$PNPM_HOME:$PATH"' >> /root/.shrc   && export PNPM_HOME="/root/.local/share/pnpm"   && export PATH="$PNPM_HOME:/usr/local/bundle/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"   && pnpm --version
+#17 1.250 10.2.0
+#17 DONE 1.3s
+
+#18 [pre-builder  8/19] WORKDIR /app
+#18 DONE 0.1s
+
+#19 [pre-builder  9/19] COPY Gemfile Gemfile.lock ./
+#19 DONE 0.1s
+
+#20 [pre-builder 10/19] RUN apk update && apk add --no-cache build-base musl ruby-full ruby-dev gcc make musl-dev openssl openssl-dev g++ linux-headers xz vips
+#20 0.154 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/APKINDEX.tar.gz
+#20 0.361 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/community/x86_64/APKINDEX.tar.gz
+#20 1.166 v3.21.7-58-gf2ce0c22cfb [https://dl-cdn.alpinelinux.org/alpine/v3.21/main]
+#20 1.166 v3.21.7-59-g6bbf7aed84d [https://dl-cdn.alpinelinux.org/alpine/v3.21/community]
+#20 1.166 OK: 25405 distinct packages available
+#20 1.400 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/main/x86_64/APKINDEX.tar.gz
+#20 1.540 fetch https://dl-cdn.alpinelinux.org/alpine/v3.21/community/x86_64/APKINDEX.tar.gz
+#20 2.251 (1/79) Installing linux-headers (6.6-r1)
+#20 2.543 (2/79) Installing ca-certificates (20260413-r0)
+#20 2.603 (3/79) Installing ruby-libs (3.3.10-r0)
+#20 2.994 (4/79) Installing libucontext (1.3.2-r0)
+#20 2.998 (5/79) Installing ruby (3.3.10-r0)
+#20 3.004 (6/79) Installing ruby-rdoc (3.3.10-r0)
+#20 3.068 (7/79) Installing libgmpxx (6.3.0-r2)
+#20 3.075 (8/79) Installing gmp-dev (6.3.0-r2)
+#20 3.194 (9/79) Installing libucontext-dev (1.3.2-r0)
+#20 3.199 (10/79) Installing ruby-dev (3.3.10-r0)
+#20 3.265 (11/79) Installing ruby-bundler (2.5.23-r0)
+#20 3.368 (12/79) Installing ruby-minitest (5.20.0-r0)
+#20 3.378 (13/79) Installing ruby-power_assert (2.0.4-r0)
+#20 3.384 (14/79) Installing ruby-rake (13.2.1-r0)
+#20 3.403 (15/79) Installing ruby-test-unit (3.6.2-r0)
+#20 3.427 (16/79) Installing ruby-rexml (3.4.4-r0)
+#20 3.447 (17/79) Installing ruby-rss (0.3.1-r0)
+#20 3.465 (18/79) Installing ruby-net-ftp (0.3.9-r0)
+#20 3.470 (19/79) Installing ruby-net-imap (0.4.22-r0)
+#20 3.495 (20/79) Installing ruby-net-pop (0.1.2-r1)
+#20 3.499 (21/79) Installing ruby-net-smtp (0.5.1-r0)
+#20 3.505 (22/79) Installing ruby-matrix (0.4.2-r2)
+#20 3.512 (23/79) Installing ruby-prime (0.1.2-r2)
+#20 3.516 (24/79) Installing ruby-rbs (3.4.4-r0)
+#20 3.676 (25/79) Installing ruby-typeprof (0.21.11-r0)
+#20 3.691 (26/79) Installing ruby-debug (1.9.2-r0)
+#20 3.711 (27/79) Installing ruby-racc (1.7.3-r0)
+#20 3.724 (28/79) Installing ruby-full (3.3.10-r0)
+#20 3.724 (29/79) Installing openexr-libiex (3.3.2-r0)
+#20 3.736 (30/79) Installing openexr-libilmthread (3.3.2-r0)
+#20 3.743 (31/79) Installing imath (3.1.12-r0)
+#20 3.754 (32/79) Installing libdeflate (1.22-r0)
+#20 3.761 (33/79) Installing openexr-libopenexrcore (3.3.2-r0)
+#20 3.798 (34/79) Installing openexr-libopenexr (3.3.2-r0)
+#20 3.822 (35/79) Installing libbz2 (1.0.8-r6)
+#20 3.827 (36/79) Installing libarchive (3.8.3-r0)
+#20 3.846 (37/79) Installing libxau (1.0.11-r4)
+#20 3.849 (38/79) Installing libmd (1.1.0-r0)
+#20 3.853 (39/79) Installing libbsd (0.12.2-r0)
+#20 3.858 (40/79) Installing libxdmcp (1.1.5-r1)
+#20 3.862 (41/79) Installing libxcb (1.16.1-r0)
+#20 3.894 (42/79) Installing libx11 (1.8.10-r0)
+#20 3.999 (43/79) Installing libxext (1.3.6-r2)
+#20 4.004 (44/79) Installing libxrender (0.9.11-r5)
+#20 4.012 (45/79) Installing libpng (1.6.57-r0)
+#20 4.026 (46/79) Installing freetype (2.13.3-r0)
+#20 4.050 (47/79) Installing fontconfig (2.15.0-r1)
+#20 4.083 (48/79) Installing pixman (0.43.4-r1)
+#20 4.101 (49/79) Installing cairo (1.18.4-r0)
+#20 4.132 (50/79) Installing cfitsio (4.5.0-r0)
+#20 4.169 (51/79) Installing cgif (0.4.1-r0)
+#20 4.174 (52/79) Installing libexif (0.6.24-r2)
+#20 4.189 (53/79) Installing fftw-double-libs (3.3.10-r6)
+#20 4.232 (54/79) Installing libintl (0.22.5-r0)
+#20 4.238 (55/79) Installing libeconf (0.6.3-r0)
+#20 4.244 (56/79) Installing libblkid (2.40.4-r1)
+#20 4.254 (57/79) Installing libmount (2.40.4-r1)
+#20 4.265 (58/79) Installing glib (2.82.5-r0)
+#20 4.385 (59/79) Installing libhwy (1.0.7-r0)
+#20 4.389 (60/79) Installing libimagequant (4.2.2-r0)
+#20 4.407 (61/79) Installing libjpeg-turbo (3.0.4-r0)
+#20 4.457 (62/79) Installing lcms2 (2.19-r0)
+#20 4.473 (63/79) Installing openjpeg (2.5.2-r0)
+#20 4.488 (64/79) Installing libxft (2.3.8-r3)
+#20 4.494 (65/79) Installing fribidi (1.0.16-r0)
+#20 4.505 (66/79) Installing graphite2 (1.3.14-r6)
+#20 4.514 (67/79) Installing harfbuzz (9.0.0-r1)
+#20 4.543 (68/79) Installing pango (1.54.0-r1)
+#20 4.563 (69/79) Installing libdav1d (1.5.0-r0)
+#20 4.598 (70/79) Installing shared-mime-info (2.4-r2)
+#20 4.629 (71/79) Installing libsharpyuv (1.4.0-r0)
+#20 4.642 (72/79) Installing libwebp (1.4.0-r0)
+#20 4.657 (73/79) Installing tiff (4.7.1-r0)
+#20 4.673 (74/79) Installing gdk-pixbuf (2.42.12-r1)
+#20 4.692 (75/79) Installing librsvg (2.59.2-r0)
+#20 4.777 (76/79) Installing libspng (0.7.4-r0)
+#20 4.784 (77/79) Installing libwebpdemux (1.4.0-r0)
+#20 4.788 (78/79) Installing libwebpmux (1.4.0-r0)
+#20 4.793 (79/79) Installing vips (8.15.3-r5)
+#20 4.877 Executing busybox-1.37.0-r12.trigger
+#20 4.900 Executing ca-certificates-20260413-r0.trigger
+#20 4.994 Executing glib-2.82.5-r0.trigger
+#20 5.006 Executing shared-mime-info-2.4-r2.trigger
+#20 5.998 Executing gdk-pixbuf-2.42.12-r1.trigger
+#20 6.039 OK: 748 MiB in 163 packages
+#20 DONE 6.4s
+
+#21 [pre-builder 11/19] RUN bundle config set --local force_ruby_platform true
+#21 DONE 0.6s
+
+#22 [pre-builder 12/19] RUN if [ "production" = "production" ]; then   bundle config set without 'development test'; bundle install -j 4 -r 3;   else bundle install -j 4 -r 3;   fi
+#22 3.312 Fetching gem metadata from https://rubygems.org/........
+#22 13.49 Fetching https://github.com/chatwoot/azure-storage-ruby
+#22 14.93 Fetching https://github.com/chatwoot/devise-secure_password
+Updating files: 100% (31316/31316), done.6)
+#22 29.47 Fetching rake 13.2.1
+#22 29.86 Installing rake 13.2.1
+#22 30.03 Fetching base64 0.3.0
+#22 30.04 Fetching benchmark 0.4.1
+#22 30.04 Fetching bigdecimal 3.2.2
+#22 30.04 Fetching concurrent-ruby 1.3.5
+#22 30.17 Installing base64 0.3.0
+#22 30.18 Installing benchmark 0.4.1
+#22 30.24 Installing bigdecimal 3.2.2 with native extensions
+#22 30.26 Fetching connection_pool 2.5.5
+#22 30.30 Fetching drb 2.2.3
+#22 30.30 Installing connection_pool 2.5.5
+#22 30.33 Installing concurrent-ruby 1.3.5
+#22 30.34 Installing drb 2.2.3
+#22 30.40 Fetching logger 1.7.0
+#22 30.47 Installing logger 1.7.0
+#22 30.59 Fetching minitest 5.25.5
+#22 30.66 Fetching mutex_m 0.3.0
+#22 30.74 Installing mutex_m 0.3.0
+#22 30.76 Installing minitest 5.25.5
+#22 30.77 Fetching securerandom 0.4.1
+#22 30.80 Installing securerandom 0.4.1
+#22 30.82 Fetching builder 3.3.0
+#22 30.86 Fetching erubi 1.13.0
+#22 30.87 Installing builder 3.3.0
+#22 30.88 Installing erubi 1.13.0
+#22 30.92 Fetching mini_portile2 2.8.9
+#22 30.96 Installing mini_portile2 2.8.9
+#22 31.01 Fetching racc 1.8.1
+#22 31.07 Installing racc 1.8.1 with native extensions
+#22 31.14 Fetching crass 1.0.6
+#22 31.18 Installing crass 1.0.6
+#22 31.22 Fetching rack 3.2.5
+#22 31.29 Fetching nio4r 2.7.3
+#22 31.33 Installing rack 3.2.5
+#22 31.42 Installing nio4r 2.7.3 with native extensions
+#22 31.63 Fetching websocket-extensions 0.1.5
+#22 31.74 Installing websocket-extensions 0.1.5
+#22 31.84 Fetching zeitwerk 2.7.4
+#22 31.87 Installing zeitwerk 2.7.4
+#22 31.94 Fetching timeout 0.4.3
+#22 31.97 Installing timeout 0.4.3
+#22 31.99 Fetching marcel 1.1.0
+#22 32.01 Installing marcel 1.1.0
+#22 32.04 Fetching mini_mime 1.1.5
+#22 32.06 Installing mini_mime 1.1.5
+#22 32.12 Fetching date 3.4.1
+#22 32.13 Installing date 3.4.1 with native extensions
+#22 33.79 Fetching public_suffix 6.0.2
+#22 33.90 Installing public_suffix 6.0.2
+#22 33.92 Fetching io-console 0.6.0
+#22 33.93 Installing io-console 0.6.0 with native extensions
+#22 39.48 Fetching thor 1.4.0
+#22 39.60 Installing thor 1.4.0
+#22 39.64 Fetching kaminari-core 1.2.2
+#22 39.67 Installing kaminari-core 1.2.2
+#22 39.70 Fetching ffi 1.17.2
+#22 39.84 Installing ffi 1.17.2 with native extensions
+#22 44.18 Fetching tilt 2.3.0
+#22 44.31 Installing tilt 2.3.0
+#22 44.41 Fetching selectize-rails 0.12.6
+#22 44.43 Installing selectize-rails 0.12.6
+#22 44.46 Fetching event_stream_parser 1.0.0
+#22 44.48 Installing event_stream_parser 1.0.0
+#22 44.50 Fetching uri 1.1.1
+#22 44.51 Installing uri 1.1.1
+#22 44.53 Fetching json 2.19.2
+#22 44.58 Installing json 2.19.2 with native extensions
+#22 61.20 Fetching multipart-post 2.4.1
+#22 61.22 Installing multipart-post 2.4.1
+#22 61.23 Fetching ruby_llm-schema 0.2.5
+#22 61.25 Installing ruby_llm-schema 0.2.5
+#22 61.27 Fetching ast 2.4.3
+#22 61.28 Installing ast 2.4.3
+#22 61.29 Fetching attr_extras 7.1.0
+#22 61.35 Installing attr_extras 7.1.0
+#22 61.43 Fetching aws-eventstream 1.4.0
+#22 61.44 Installing aws-eventstream 1.4.0
+#22 61.45 Fetching aws-partitions 1.1198.0
+#22 61.48 Installing aws-partitions 1.1198.0
+#22 61.50 Fetching jmespath 1.6.2
+#22 61.50 Installing jmespath 1.6.2
+#22 61.53 Fetching multi_json 1.15.0
+#22 61.60 Installing multi_json 1.15.0
+#22 61.62 Fetching statsd-ruby 1.5.0
+#22 61.65 Installing statsd-ruby 1.5.0
+#22 61.67 Fetching bcrypt 3.1.22
+#22 61.69 Installing bcrypt 3.1.22 with native extensions
+#22 63.45 Fetching msgpack 1.8.0
+#22 63.47 Installing msgpack 1.8.0 with native extensions
+#22 65.24 Fetching browser 5.3.1
+#22 65.26 Installing browser 5.3.1
+#22 65.36 Fetching cld3 3.7.0
+#22 65.43 Installing cld3 3.7.0 with native extensions
+#22 66.97 Fetching commonmarker 0.23.10
+#22 67.04 Installing commonmarker 0.23.10 with native extensions
+#22 81.59 Fetching csv 3.3.0
+#22 81.65 Installing csv 3.3.0
+#22 81.74 Fetching datadog-ruby_core_source 3.4.1
+#22 81.85 Installing datadog-ruby_core_source 3.4.1
+#22 82.33 Fetching libdatadog 18.1.0.1.0
+#22 84.58 Installing libdatadog 18.1.0.1.0
+#22 85.30 Fetching declarative 0.0.20
+#22 85.32 Installing declarative 0.0.20
+#22 85.33 Fetching orm_adapter 0.5.0
+#22 85.35 Installing orm_adapter 0.5.0
+#22 85.37 Fetching rotp 6.3.0
+#22 85.38 Installing rotp 6.3.0
+#22 85.42 Fetching digest-crc 0.6.5
+#22 85.44 Installing digest-crc 0.6.5 with native extensions
+#22 95.96 Fetching unf_ext 0.0.8.2
+#22 96.89 Installing unf_ext 0.0.8.2 with native extensions
+#22 100.7 Fetching dotenv 3.1.2
+#22 100.7 Installing dotenv 3.1.2
+#22 100.7 Fetching dry-cli 1.1.0
+#22 100.7 Installing dry-cli 1.1.0
+#22 100.7 Fetching regexp_parser 2.10.0
+#22 100.8 Installing regexp_parser 2.10.0
+#22 100.9 Fetching http-form_data 2.3.0
+#22 100.9 Installing http-form_data 2.3.0
+#22 100.9 Fetching ruby2_keywords 0.0.5
+#22 101.0 Installing ruby2_keywords 0.0.5
+#22 101.0 Fetching email-provider-info 0.0.1
+#22 101.0 Fetching email_reply_trimmer 0.1.13
+#22 101.1 Installing email-provider-info 0.0.1
+#22 101.1 Installing email_reply_trimmer 0.1.13
+#22 101.1 Fetching execjs 2.8.1
+#22 101.1 Installing execjs 2.8.1
+#22 101.2 Fetching hashie 5.0.0
+#22 101.2 Installing hashie 5.0.0
+#22 101.3 Fetching os 1.1.4
+#22 101.4 Installing os 1.1.4
+#22 101.4 Fetching flag_shih_tzu 0.3.23
+#22 101.5 Installing flag_shih_tzu 0.3.23
+#22 101.5 Fetching foreman 0.87.2
+#22 101.6 Installing foreman 0.87.2
+#22 101.6 Fetching raabro 1.4.0
+#22 101.6 Installing raabro 1.4.0
+#22 101.7 Fetching google-protobuf 3.25.7
+#22 101.8 Installing google-protobuf 3.25.7 with native extensions
+#22 101.8 Fetching geocoder 1.8.1
+#22 101.9 Installing geocoder 1.8.1
+#22 102.1 Fetching ostruct 0.6.1
+#22 102.1 Installing ostruct 0.6.1
+#22 102.2 Fetching version_gem 1.1.4
+#22 102.3 Installing version_gem 1.1.4
+#22 102.3 Fetching httpclient 2.8.3
+#22 102.4 Fetching trailblazer-option 0.1.2
+#22 102.4 Installing trailblazer-option 0.1.2
+#22 102.4 Installing httpclient 2.8.3
+#22 102.4 Fetching uber 0.1.0
+#22 102.4 Installing uber 0.1.0
+#22 102.6 Fetching retriable 3.1.2
+#22 102.6 Installing retriable 3.1.2
+#22 102.6 Fetching google-cloud-errors 1.3.1
+#22 102.7 Fetching gserver 0.0.1
+#22 102.7 Installing google-cloud-errors 1.3.1
+#22 102.7 Installing gserver 0.0.1
+#22 102.7 Fetching haikunator 1.1.1
+#22 102.7 Fetching sexp_processor 4.17.0
+#22 102.7 Installing haikunator 1.1.1
+#22 102.7 Installing sexp_processor 4.17.0
+#22 102.8 Fetching hana 1.3.7
+#22 102.8 Installing hana 1.3.7
+#22 102.8 Fetching hash_diff 1.1.1
+#22 102.8 Installing hash_diff 1.1.1
+#22 102.8 Fetching http-accept 1.7.0
+#22 102.8 Installing http-accept 1.7.0
+#22 102.9 Fetching mini_magick 4.12.0
+#22 102.9 Fetching uri_template 0.7.0
+#22 102.9 Installing mini_magick 4.12.0
+#22 102.9 Installing uri_template 0.7.0
+#22 103.0 Fetching judoscale-ruby 1.8.2
+#22 103.0 Fetching rexml 3.4.4
+#22 103.0 Installing judoscale-ruby 1.8.2
+#22 103.0 Installing rexml 3.4.4
+#22 103.1 Fetching line-bot-api 1.28.0
+#22 103.1 Installing line-bot-api 1.28.0
+#22 103.1 Fetching liquid 5.4.0
+#22 103.2 Installing liquid 5.4.0
+#22 103.2 Fetching maxminddb 0.1.22
+#22 103.2 Installing maxminddb 0.1.22
+#22 103.3 Fetching mime-types-data 3.2023.0218.1
+#22 103.3 Fetching netrc 0.11.0
+#22 103.3 Installing netrc 0.11.0
+#22 103.4 Installing mime-types-data 3.2023.0218.1
+#22 103.4 Fetching openssl 3.2.0
+#22 103.5 Installing openssl 3.2.0 with native extensions
+#22 103.5 Fetching opentelemetry-api 1.7.0
+#22 103.5 Installing opentelemetry-api 1.7.0
+#22 103.6 Fetching pg 1.5.3
+#22 103.7 Installing pg 1.5.3 with native extensions
+#22 133.9 Fetching pgvector 0.1.1
+#22 134.0 Installing pgvector 0.1.1
+#22 134.1 Fetching rack-timeout 0.6.3
+#22 134.1 Installing rack-timeout 0.6.3
+#22 134.1 Fetching sorbet-runtime 0.5.11934
+#22 134.2 Installing sorbet-runtime 0.5.11934
+#22 134.2 Fetching ssrf_filter 1.5.0
+#22 134.2 Installing ssrf_filter 1.5.0
+#22 134.2 Fetching stripe 18.0.1
+#22 134.7 Installing stripe 18.0.1
+#22 137.0 Fetching telephone_number 1.4.20
+#22 138.0 Installing telephone_number 1.4.20
+#22 138.5 Fetching wisper 2.0.0
+#22 138.5 Installing wisper 2.0.0
+#22 138.5 Fetching jwt 2.10.1
+#22 138.5 Installing jwt 2.10.1
+#22 138.6 Fetching newrelic_rpm 9.6.0
+#22 138.8 Installing newrelic_rpm 9.6.0
+#22 138.9 Fetching net-http-persistent 4.0.2
+#22 138.9 Installing net-http-persistent 4.0.2
+#22 138.9 Fetching redis-client 0.26.4
+#22 138.9 Installing redis-client 0.26.4
+#22 139.0 Fetching i18n 1.14.7
+#22 139.0 Installing i18n 1.14.7
+#22 139.1 Fetching tzinfo 2.0.6
+#22 139.1 Installing tzinfo 2.0.6
+#22 139.2 Fetching rack-session 2.1.1
+#22 139.3 Installing rack-session 2.1.1
+#22 139.3 Fetching rack-test 2.1.0
+#22 139.3 Installing rack-test 2.1.0
+#22 139.3 Fetching rackup 2.2.1
+#22 139.4 Installing rackup 2.2.1
+#22 139.4 Fetching sprockets 4.2.1
+#22 139.4 Installing sprockets 4.2.1
+#22 139.5 Fetching warden 1.2.9
+#22 139.5 Installing warden 1.2.9
+#22 139.5 Fetching request_store 1.5.1
+#22 139.5 Fetching rack-protection 4.2.1
+#22 139.6 Installing request_store 1.5.1
+#22 139.6 Installing rack-protection 4.2.1
+#22 139.6 Fetching rack-attack 6.7.0
+#22 139.6 Installing rack-attack 6.7.0
+#22 139.6 Fetching rack-cors 2.0.0
+#22 139.7 Installing rack-cors 2.0.0
+#22 139.7 Fetching rack-proxy 0.7.7
+#22 139.7 Fetching websocket-driver 0.7.7
+#22 139.7 Installing rack-proxy 0.7.7
+#22 139.8 Installing websocket-driver 0.7.7 with native extensions
+#22 139.8 Fetching net-protocol 0.2.2
+#22 139.8 Installing net-protocol 0.2.2
+#22 139.9 Fetching nokogiri 1.19.1
+#22 140.3 Installing nokogiri 1.19.1 with native extensions
+#22 140.6 Fetching addressable 2.8.7
+#22 140.6 Installing addressable 2.8.7
+#22 140.7 Fetching reline 0.3.6
+#22 140.8 Installing reline 0.3.6
+#22 140.9 Fetching puma 6.4.3
+#22 141.0 Installing puma 6.4.3 with native extensions
+#22 141.0 Fetching net-http 0.9.1
+#22 141.1 Installing net-http 0.9.1
+#22 141.2 Fetching faraday-multipart 1.0.4
+#22 141.2 Installing faraday-multipart 1.0.4
+#22 141.3 Fetching parser 3.3.8.0
+#22 141.7 Installing parser 3.3.8.0
+#22 142.0 Fetching aws-sigv4 1.12.1
+#22 142.0 Installing aws-sigv4 1.12.1
+#22 142.1 Fetching barnes 0.0.9
+#22 142.1 Installing barnes 0.0.9
+#22 142.1 Fetching multi_xml 0.8.0
+#22 142.1 Installing multi_xml 0.8.0
+#22 142.2 Fetching sentry-ruby 5.19.0
+#22 142.2 Installing sentry-ruby 5.19.0
+#22 142.3 Fetching bootsnap 1.16.0
+#22 142.3 Installing bootsnap 1.16.0 with native extensions
+#22 143.6 Fetching csv-safe 3.3.1
+#22 143.7 Installing csv-safe 3.3.1
+#22 143.7 Fetching iso-639 0.3.8
+#22 143.7 Installing iso-639 0.3.8
+#22 143.7 Fetching ecma-re-validator 0.4.0
+#22 143.7 Installing ecma-re-validator 0.4.0
+#22 143.7 Fetching unf 0.1.4
+#22 143.7 Installing unf 0.1.4
+#22 143.8 Fetching uglifier 4.2.0
+#22 143.8 Installing uglifier 4.2.0
+#22 143.8 Fetching sassc 2.4.0
+#22 143.8 Installing sassc 2.4.0 with native extensions
+#22 154.1 Fetching libddwaf 1.24.1.0.3
+#22 154.3 Installing libddwaf 1.24.1.0.3
+#22 154.5 Fetching ffi-compiler 1.0.1
+#22 154.5 Installing ffi-compiler 1.0.1
+#22 154.5 Fetching ruby-vips 2.1.4
+#22 154.6 Installing ruby-vips 2.1.4
+#22 154.7 Fetching gli 2.22.2
+#22 155.1 Installing gli 2.22.2
+#22 155.1 Fetching oj 3.16.10
+#22 155.3 Installing oj 3.16.10 with native extensions
+#22 211.5 Fetching oauth-tty 1.0.5
+#22 211.5 Installing oauth-tty 1.0.5
+#22 211.5 Fetching snaky_hash 2.0.1
+#22 211.6 Installing snaky_hash 2.0.1
+#22 211.6 Fetching representable 3.2.0
+#22 211.6 Installing representable 3.2.0
+#22 211.7 Fetching ruby_parser 3.20.0
+#22 211.8 Installing ruby_parser 3.20.0
+#22 212.3 Fetching json_refs 0.1.8
+#22 212.3 Installing json_refs 0.1.8
+#22 212.4 Fetching mime-types 3.4.1
+#22 212.4 Installing mime-types 3.4.1
+#22 212.5 Fetching opentelemetry-common 0.23.0
+#22 212.5 Installing opentelemetry-common 0.23.0
+#22 212.5 Fetching opentelemetry-registry 0.4.0
+#22 212.5 Installing opentelemetry-registry 0.4.0
+#22 212.5 Fetching opentelemetry-semantic_conventions 1.36.0
+#22 212.6 Installing opentelemetry-semantic_conventions 1.36.0
+#22 212.8 Fetching sidekiq 7.3.1
+#22 212.8 Installing sidekiq 7.3.1
+#22 213.0 Fetching redis 5.0.6
+#22 213.0 Installing redis 5.0.6
+#22 213.1 Fetching faker 3.2.0
+#22 213.3 Installing faker 3.2.0
+#22 213.9 Fetching activesupport 7.1.5.2
+#22 213.9 Installing activesupport 7.1.5.2
+#22 214.3 Fetching et-orbi 1.2.11
+#22 214.3 Installing et-orbi 1.2.11
+#22 214.3 Fetching tzinfo-data 1.2023.3
+#22 214.4 Installing tzinfo-data 1.2023.3
+#22 214.8 Fetching omniauth 2.1.4
+#22 214.8 Installing omniauth 2.1.4
+#22 214.9 Fetching vite_ruby 3.8.0
+#22 214.9 Installing vite_ruby 3.8.0
+#22 214.9 Fetching net-imap 0.4.20
+#22 214.9 Installing net-imap 0.4.20
+#22 215.0 Fetching net-pop 0.1.2
+#22 215.0 Installing net-pop 0.1.2
+#22 215.0 Fetching net-smtp 0.3.4
+#22 215.0 Installing net-smtp 0.3.4
+#22 215.0 Fetching down 5.4.0
+#22 215.1 Installing down 5.4.0
+#22 215.1 Fetching googleapis-common-protos-types 1.20.0
+#22 215.1 Installing googleapis-common-protos-types 1.20.0
+#22 215.2 Fetching irb 1.7.2
+#22 215.3 Installing irb 1.7.2
+#22 215.3 Fetching faraday-net_http 3.4.2
+#22 215.4 Installing faraday-net_http 3.4.2
+#22 215.4 Fetching scout_apm 5.3.3
+#22 215.5 Installing scout_apm 5.3.3 with native extensions
+#22 218.2 Fetching aws-sdk-core 3.240.0
+#22 218.3 Installing aws-sdk-core 3.240.0
+#22 218.6 Fetching httparty 0.24.0
+#22 218.6 Installing httparty 0.24.0
+#22 218.7 Fetching json_schemer 0.2.24
+#22 218.7 Installing json_schemer 0.2.24
+#22 218.8 Fetching domain_name 0.5.20190701
+#22 218.8 Installing domain_name 0.5.20190701
+#22 218.8 Fetching datadog 2.19.0
+#22 219.0 Installing datadog 2.19.0 with native extensions
+#22 219.5 Fetching llhttp-ffi 0.4.0
+#22 219.6 Installing llhttp-ffi 0.4.0 with native extensions
+#22 223.2 Fetching image_processing 1.12.2
+#22 223.3 Installing image_processing 1.12.2
+#22 223.4 Fetching oauth 1.1.0
+#22 223.4 Installing oauth 1.1.0
+#22 223.5 Fetching ruby2ruby 2.5.0
+#22 223.5 Installing ruby2ruby 2.5.0
+#22 223.5 Fetching opentelemetry-sdk 1.10.0
+#22 223.5 Installing opentelemetry-sdk 1.10.0
+#22 223.6 Fetching judoscale-sidekiq 1.8.2
+#22 223.6 Installing judoscale-sidekiq 1.8.2
+#22 223.6 Fetching newrelic-sidekiq-metrics 1.6.2
+#22 223.6 Installing newrelic-sidekiq-metrics 1.6.2
+#22 223.6 Fetching sentry-sidekiq 5.19.0
+#22 223.6 Installing sentry-sidekiq 5.19.0
+#22 223.7 Fetching sidekiq_alive 2.5.0
+#22 223.8 Installing sidekiq_alive 2.5.0
+#22 223.8 Fetching redis-namespace 1.10.0
+#22 223.8 Installing redis-namespace 1.10.0
+#22 223.8 Fetching globalid 1.2.1
+#22 223.8 Installing globalid 1.2.1
+#22 223.9 Fetching activemodel 7.1.5.2
+#22 223.9 Installing activemodel 7.1.5.2
+#22 223.9 Fetching groupdate 6.2.1
+#22 224.0 Installing groupdate 6.2.1
+#22 224.0 Fetching pundit 2.3.0
+#22 224.0 Installing pundit 2.3.0
+#22 224.0 Fetching time_diff 0.3.0
+#22 224.0 Installing time_diff 0.3.0
+#22 224.0 Fetching working_hours 1.4.1
+#22 224.1 Installing working_hours 1.4.1
+#22 224.1 Fetching fugit 1.11.1
+#22 224.1 Installing fugit 1.11.1
+#22 224.1 Fetching mail 2.8.1
+#22 224.2 Installing mail 2.8.1
+#22 224.3 Fetching grpc 1.72.0
+#22 225.6 Installing grpc 1.72.0 with native extensions
+#22 265.4 Fetching faraday 2.14.1
+#22 265.4 Installing faraday 2.14.1
+#22 265.6 Fetching aws-sdk-kms 1.118.0
+#22 265.7 Installing aws-sdk-kms 1.118.0
+#22 265.8 Fetching aws-sdk-sns 1.70.0
+#22 265.8 Installing aws-sdk-sns 1.70.0
+#22 265.9 Fetching facebook-messenger 2.0.1
+#22 265.9 Installing facebook-messenger 2.0.1
+#22 266.0 Fetching http-cookie 1.0.5
+#22 266.0 Installing http-cookie 1.0.5
+#22 266.1 Fetching shopify_api 14.8.0
+#22 266.2 Installing shopify_api 14.8.0
+#22 268.0 Fetching web-push 3.0.1
+#22 268.0 Installing web-push 3.0.1
+#22 268.1 Fetching gmail_xoauth 0.4.3
+#22 268.2 Installing gmail_xoauth 0.4.3
+#22 268.3 Fetching twitty 0.1.5
+#22 268.3 Installing twitty 0.1.5
+#22 268.4 Fetching opentelemetry-exporter-otlp 0.31.1
+#22 268.5 Installing opentelemetry-exporter-otlp 0.31.1
+#22 268.5 Fetching activejob 7.1.5.2
+#22 268.6 Installing activejob 7.1.5.2
+#22 268.7 Fetching activerecord 7.1.5.2
+#22 268.8 Installing activerecord 7.1.5.2
+#22 269.4 Fetching searchkick 5.5.2
+#22 269.4 Installing searchkick 5.5.2
+#22 269.5 Fetching sidekiq-cron 1.12.0
+#22 269.5 Installing sidekiq-cron 1.12.0
+#22 269.5 Fetching valid_email2 5.2.6
+#22 269.7 Installing valid_email2 5.2.6
+#22 270.0 Fetching faraday-retry 2.4.0
+#22 270.0 Installing faraday-retry 2.4.0
+#22 270.1 Fetching faraday-follow_redirects 0.3.0
+#22 270.1 Installing faraday-follow_redirects 0.3.0
+#22 270.1 Fetching faraday-net_http_persistent 2.1.0
+#22 270.2 Installing faraday-net_http_persistent 2.1.0
+#22 270.2 Fetching faraday-mashify 1.0.0
+#22 270.2 Installing faraday-mashify 1.0.0
+#22 270.2 Fetching faraday_middleware-aws-sigv4 1.0.1
+#22 270.3 Installing faraday_middleware-aws-sigv4 1.0.1
+#22 270.3 Fetching google-cloud-env 2.2.1
+#22 270.3 Installing google-cloud-env 2.2.1
+#22 270.4 Fetching signet 0.17.0
+#22 270.4 Installing signet 0.17.0
+#22 270.5 Fetching koala 3.4.0
+#22 271.0 Installing koala 3.4.0
+#22 271.3 Fetching oauth2 2.0.9
+#22 271.4 Installing oauth2 2.0.9
+#22 271.4 Fetching opensearch-ruby 3.4.0
+#22 271.5 Installing opensearch-ruby 3.4.0
+#22 272.1 Fetching ruby-openai 7.3.1
+#22 272.1 Installing ruby-openai 7.3.1
+#22 272.3 Fetching aws-sdk-s3 1.208.0
+#22 272.5 Installing aws-sdk-s3 1.208.0
+#22 273.0 Fetching http 5.1.1
+#22 273.1 Installing http 5.1.1
+#22 273.3 Fetching rest-client 2.1.0
+#22 273.3 Installing rest-client 2.1.0
+#22 273.4 Fetching activerecord-import 2.1.0
+#22 273.5 Installing activerecord-import 2.1.0
+#22 273.8 Fetching acts-as-taggable-on 12.0.0
+#22 273.8 Installing acts-as-taggable-on 12.0.0
+#22 273.9 Fetching kaminari-activerecord 1.2.2
+#22 273.9 Installing kaminari-activerecord 1.2.2
+#22 273.9 Fetching audited 5.4.1
+#22 273.9 Installing audited 5.4.1
+#22 274.2 Fetching hairtrigger 1.0.0
+#22 274.3 Installing hairtrigger 1.0.0
+#22 274.4 Fetching neighbor 0.2.3
+#22 274.4 Installing neighbor 0.2.3
+#22 274.5 Fetching pg_search 2.3.6
+#22 274.5 Installing pg_search 2.3.6
+#22 274.6 Fetching procore-sift 1.0.0
+#22 274.7 Installing procore-sift 1.0.0
+#22 274.7 Fetching ruby_llm 1.9.2
+#22 274.8 Installing ruby_llm 1.9.2
+#22 275.1 Fetching slack-ruby-client 2.7.0
+#22 275.2 Installing slack-ruby-client 2.7.0
+#22 275.7 Fetching google-cloud-core 1.7.1
+#22 275.7 Installing google-cloud-core 1.7.1
+#22 275.8 Fetching googleauth 1.11.2
+#22 275.8 Installing googleauth 1.11.2
+#22 275.9 Fetching omniauth-oauth2 1.8.0
+#22 276.0 Installing omniauth-oauth2 1.8.0
+#22 276.0 Fetching elastic-apm 4.6.2
+#22 276.1 Installing elastic-apm 4.6.2
+#22 276.6 Fetching ai-agents 0.9.1
+#22 276.7 Installing ai-agents 0.9.1
+#22 276.9 Fetching fcm 1.0.8
+#22 276.9 Installing fcm 1.0.8
+#22 276.9 Fetching google-apis-core 0.15.1
+#22 277.0 Installing google-apis-core 0.15.1
+#22 277.0 Fetching omniauth-google-oauth2 1.1.3
+#22 277.1 Installing omniauth-google-oauth2 1.1.3
+#22 277.1 Fetching google-apis-iamcredentials_v1 0.22.0
+#22 277.2 Installing google-apis-iamcredentials_v1 0.22.0
+#22 277.2 Fetching google-apis-storage_v1 0.47.0
+#22 277.2 Installing google-apis-storage_v1 0.47.0
+#22 277.3 Fetching google-cloud-storage 1.52.0
+#22 277.3 Installing google-cloud-storage 1.52.0
+#22 455.4 Fetching rails-dom-testing 2.2.0
+#22 455.4 Fetching loofah 2.23.1
+#22 455.4 Fetching html2text 0.4.0
+#22 455.5 Installing rails-dom-testing 2.2.0
+#22 455.6 Installing loofah 2.23.1
+#22 455.6 Installing html2text 0.4.0
+#22 455.6 Fetching ruby-saml 1.18.1
+#22 455.7 Fetching reverse_markdown 2.1.1
+#22 455.7 Installing ruby-saml 1.18.1
+#22 455.7 Fetching twilio-ruby 7.6.0
+#22 455.7 Installing reverse_markdown 2.1.1
+#22 455.9 Fetching rails-html-sanitizer 1.6.1
+#22 455.9 Installing rails-html-sanitizer 1.6.1
+#22 456.0 Fetching omniauth-saml 2.2.4
+#22 456.0 Fetching actionview 7.1.5.2
+#22 456.0 Installing omniauth-saml 2.2.4
+#22 456.0 Installing twilio-ruby 7.6.0
+#22 456.1 Installing actionview 7.1.5.2
+#22 456.5 Fetching actionpack 7.1.5.2
+#22 456.5 Fetching kaminari-actionview 1.2.2
+#22 456.5 Installing kaminari-actionview 1.2.2
+#22 456.5 Fetching jbuilder 2.11.5
+#22 456.6 Installing actionpack 7.1.5.2
+#22 456.6 Installing jbuilder 2.11.5
+#22 456.7 Fetching kaminari 1.2.2
+#22 456.7 Installing kaminari 1.2.2
+#22 457.0 Fetching actioncable 7.1.5.2
+#22 457.0 Fetching activestorage 7.1.5.2
+#22 457.1 Installing actioncable 7.1.5.2
+#22 457.1 Installing activestorage 7.1.5.2
+#22 457.6 Fetching actionmailer 7.1.5.2
+#22 457.6 Installing actionmailer 7.1.5.2
+#22 457.8 Fetching railties 7.1.5.2
+#22 458.0 Fetching sprockets-rails 3.4.2
+#22 458.0 Installing railties 7.1.5.2
+#22 458.0 Installing sprockets-rails 3.4.2
+#22 458.2 Fetching omniauth-rails_csrf_protection 1.0.2
+#22 458.3 Installing omniauth-rails_csrf_protection 1.0.2
+#22 458.5 Fetching actionmailbox 7.1.5.2
+#22 458.5 Installing actionmailbox 7.1.5.2
+#22 458.8 Fetching actiontext 7.1.5.2
+#22 458.9 Installing actiontext 7.1.5.2
+#22 459.1 Fetching aws-actionmailbox-ses 0.1.0
+#22 459.2 Installing aws-actionmailbox-ses 0.1.0
+#22 459.4 Fetching jquery-rails 4.6.0
+#22 459.4 Fetching sassc-rails 2.1.2
+#22 460.0 Installing sassc-rails 2.1.2
+#22 460.1 Fetching rails 7.1.5.2
+#22 460.2 Installing rails 7.1.5.2
+#22 460.2 Installing jquery-rails 4.6.0
+#22 460.2 Fetching responders 3.1.1
+#22 460.3 Installing responders 3.1.1
+#22 460.4 Fetching dotenv-rails 3.1.2
+#22 460.4 Fetching judoscale-rails 1.8.2
+#22 460.5 Installing dotenv-rails 3.1.2
+#22 460.5 Installing judoscale-rails 1.8.2
+#22 460.5 Fetching lograge 0.14.0
+#22 460.6 Fetching sentry-rails 5.19.0
+#22 460.6 Installing lograge 0.14.0
+#22 460.7 Fetching vite_rails 3.0.17
+#22 460.7 Installing sentry-rails 5.19.0
+#22 460.7 Installing vite_rails 3.0.17
+#22 460.8 Fetching devise 4.9.4
+#22 460.8 Fetching administrate 0.20.1
+#22 460.9 Installing administrate 0.20.1
+#22 460.9 Installing devise 4.9.4
+#22 461.5 Fetching devise-two-factor 6.1.0
+#22 461.5 Fetching devise_token_auth 1.2.5
+#22 461.6 Installing devise-two-factor 6.1.0
+#22 461.7 Installing devise_token_auth 1.2.5
+#22 461.8 Fetching administrate-field-active_storage 1.0.3
+#22 461.9 Fetching administrate-field-belongs_to_search 0.9.0
+#22 461.9 Installing administrate-field-active_storage 1.0.3
+#22 462.0 Installing administrate-field-belongs_to_search 0.9.0
+#22 1887.4 Fetching googleapis-common-protos 1.6.0
+#22 1887.5 Installing googleapis-common-protos 1.6.0
+#22 1887.5 Fetching gapic-common 0.20.0
+#22 1887.6 Installing gapic-common 0.20.0
+#22 1887.6 Fetching google-cloud-translate-v3 0.10.0
+#22 1887.6 Fetching google-cloud-location 0.6.0
+#22 1887.7 Installing google-cloud-location 0.6.0
+#22 1887.7 Installing google-cloud-translate-v3 0.10.0
+#22 1887.8 Fetching google-cloud-dialogflow-v2 0.31.0
+#22 1887.9 Installing google-cloud-dialogflow-v2 0.31.0
+#22 1888.1 Bundle complete! 148 Gemfile dependencies, 289 gems now installed.
+#22 1888.1 Gems in the groups 'development' and 'test' were not installed.
+#22 1888.1 Bundled gems are installed into `/gems`
+#22 1888.1 Post-install message from ruby_llm:
+#22 1888.1 Upgrading from RubyLLM <= 1.8.x? Check the upgrade guide for new features and migration instructions
+#22 1888.1 --> https://rubyllm.com/upgrading/
+#22 1888.1 Post-install message from devise:
+#22 1888.1 
+#22 1888.1 [DEVISE] Please review the [changelog] and [upgrade guide] for more info on Hotwire / Turbo integration.
+#22 1888.1 
+#22 1888.1   [changelog] https://github.com/heartcombo/devise/blob/main/CHANGELOG.md
+#22 1888.1   [upgrade guide] https://github.com/heartcombo/devise/wiki/How-To:-Upgrade-to-Devise-4.9.0-%5BHotwire-Turbo-integration%5D
+#22 1888.1   Post-install message from httparty:
+#22 1888.1 When you HTTParty, you must party hard!
+#22 1888.1 Post-install message from oauth:
+#22 1888.1 
+#22 1888.1 You have installed oauth version 1.1.0, congratulations!
+#22 1888.1 
+#22 1888.1 Non-commercial support for the 1.x series will end by April, 2025. Please make a plan to upgrade to the next version prior to that date.
+#22 1888.1 The only breaking change will be dropped support for Ruby 2.7 and any other versions which will also have reached EOL by then.
+#22 1888.1 
+#22 1888.1 Please see:
+#22 1888.1 • https://github.com/oauth-xx/oauth-ruby/blob/main/SECURITY.md
+#22 1888.1 
+#22 1888.1 Note also that I am, and this project is, in the process of leaving Github.
+#22 1888.1 I wrote about some of the reasons here:
+#22 1888.1 • https://dev.to/galtzo/im-leaving-github-50ba
+#22 1888.1 
+#22 1888.1 If you are a human, please consider a donation as I move toward supporting myself with Open Source work:
+#22 1888.1 • https://liberapay.com/pboling
+#22 1888.1 • https://ko-fi.com/pboling
+#22 1888.1 • https://patreon.com/galtzo
+#22 1888.1 
+#22 1888.1 If you are a corporation, please consider supporting this project, and open source work generally, with a TideLift subscription.
+#22 1888.1 • https://tidelift.com/funding/github/rubygems/oauth
+#22 1888.1 • Or hire me. I am looking for a job!
+#22 1888.1 
+#22 1888.1 Please report issues, and support the project!
+#22 1888.1 
+#22 1888.1 Thanks, |7eter l-|. l3oling
+#22 1888.1 Post-install message from oauth2:
+#22 1888.1 
+#22 1888.1 You have installed oauth2 version 2.0.9, congratulations!
+#22 1888.1 
+#22 1888.1 There are BREAKING changes if you are upgrading from < v2, but most will not encounter them, and updating your code should be easy!
+#22 1888.1 
+#22 1888.1 We have made two other major migrations:
+#22 1888.1 1. master branch renamed to main
+#22 1888.1 2. Github has been replaced with Gitlab
+#22 1888.1 
+#22 1888.1 Please see:
+#22 1888.1 • https://gitlab.com/oauth-xx/oauth2#what-is-new-for-v20
+#22 1888.1 • https://gitlab.com/oauth-xx/oauth2/-/blob/main/CHANGELOG.md
+#22 1888.1 • https://groups.google.com/g/oauth-ruby/c/QA_dtrXWXaE
+#22 1888.1 
+#22 1888.1 Please report issues, and support the project! Thanks, |7eter l-|. l3oling
+#22 1888.1 
+#22 1888.1 Post-install message from vite_ruby:
+#22 1888.1 Thanks for installing Vite Ruby!
+#22 1888.1 
+#22 1888.1 If you upgraded the gem manually, please run:
+#22 1888.1 	bundle exec vite upgrade
+#22 1888.1 2 installed gems you directly depend on are looking for funding.
+#22 1888.1   Run `bundle fund` for details
+#22 DONE 1888.8s
+
+#23 [pre-builder 13/19] COPY package.json pnpm-lock.yaml ./
+#23 DONE 7.2s
+
+#24 [pre-builder 14/19] RUN pnpm i
+#24 2.694 Lockfile is up to date, resolution step is skipped
+#24 3.001 Progress: resolved 1, reused 0, downloaded 0, added 0
+#24 3.795 Packages: +1046
+#24 3.795 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+#24 4.008 Progress: resolved 1046, reused 0, downloaded 0, added 0
+#24 4.491 
+#24 4.491    ╭──────────────────────────────────────────────────────────────────╮
+#24 4.491    │                                                                  │
+#24 4.491    │                Update available! 10.2.0 → 11.1.0.                │
+#24 4.491    │   Changelog: https://github.com/pnpm/pnpm/releases/tag/v11.1.0   │
+#24 4.491    │                Run "pnpm self-update" to update.                 │
+#24 4.491    │                                                                  │
+#24 4.491    ╰──────────────────────────────────────────────────────────────────╯
+#24 4.491 
+#24 5.011 Progress: resolved 1046, reused 0, downloaded 12, added 0
+#24 6.014 Progress: resolved 1046, reused 0, downloaded 49, added 36
+#24 7.015 Progress: resolved 1046, reused 0, downloaded 87, added 83
+#24 8.018 Progress: resolved 1046, reused 0, downloaded 99, added 87
+#24 9.034 Progress: resolved 1046, reused 0, downloaded 156, added 143
+#24 10.03 Progress: resolved 1046, reused 0, downloaded 240, added 231
+#24 11.03 Progress: resolved 1046, reused 0, downloaded 311, added 303
+#24 12.04 Progress: resolved 1046, reused 0, downloaded 327, added 313
+#24 13.05 Progress: resolved 1046, reused 0, downloaded 366, added 357
+#24 14.05 Progress: resolved 1046, reused 0, downloaded 384, added 371
+#24 15.05 Progress: resolved 1046, reused 0, downloaded 468, added 461
+#24 16.06 Progress: resolved 1046, reused 0, downloaded 597, added 585
+#24 17.09 Progress: resolved 1046, reused 0, downloaded 703, added 690
+#24 18.20 Progress: resolved 1046, reused 0, downloaded 742, added 732
+#24 19.20 Progress: resolved 1046, reused 0, downloaded 772, added 760
+#24 20.20 Progress: resolved 1046, reused 0, downloaded 892, added 883
+#24 21.21 Progress: resolved 1046, reused 0, downloaded 989, added 983
+#24 21.85 Progress: resolved 1046, reused 0, downloaded 1045, added 1046, done
+#24 23.43 
+#24 23.43 dependencies:
+#24 23.43 + @amplitude/analytics-browser 2.33.1
+#24 23.43 + @breezystack/lamejs 1.2.7
+#24 23.43 + @chatwoot/ninja-keys 1.2.3
+#24 23.43 + @chatwoot/prosemirror-schema 1.3.10
+#24 23.43 + @chatwoot/utils 0.0.52
+#24 23.43 + @formkit/core 1.7.2
+#24 23.43 + @formkit/vue 1.7.2
+#24 23.43 + @hcaptcha/vue3-hcaptcha 1.3.0
+#24 23.43 + @highlightjs/vue-plugin 2.1.0
+#24 23.43 + @iconify-json/fluent 1.2.36
+#24 23.43 + @iconify-json/material-symbols 1.2.10
+#24 23.43 + @lk77/vue3-color 3.0.6
+#24 23.43 + @radix-ui/colors 3.0.0
+#24 23.43 + @rails/actioncable 6.1.3
+#24 23.43 + @rails/ujs 7.1.400
+#24 23.43 + @scmmishra/pico-search 0.6.0
+#24 23.43 + @sentry/vue 8.55.0
+#24 23.43 + @sindresorhus/slugify 2.2.1
+#24 23.43 + @tailwindcss/typography 0.5.19
+#24 23.43 + @tanstack/vue-table 8.20.5
+#24 23.43 + @twilio/voice-sdk 2.17.0
+#24 23.43 + @vitejs/plugin-vue 5.1.4
+#24 23.43 + @vue/compiler-sfc 3.5.8
+#24 23.43 + @vuelidate/core 2.0.3
+#24 23.43 + @vuelidate/validators 2.0.4
+#24 23.43 + @vueuse/components 12.0.0
+#24 23.43 + @vueuse/core 12.0.0
+#24 23.43 + activestorage 5.2.8
+#24 23.43 + axios 1.15.0
+#24 23.43 + camelcase-keys 9.1.3
+#24 23.43 + chart.js 4.4.4
+#24 23.43 + color2k 2.0.3
+#24 23.43 + company-email-validator 1.1.0
+#24 23.43 + core-js 3.38.1
+#24 23.43 + countries-and-timezones 3.6.0
+#24 23.43 + date-fns 2.21.1
+#24 23.43 + date-fns-tz 1.3.8
+#24 23.43 + dompurify 3.3.2
+#24 23.43 + flag-icons 7.2.3
+#24 23.43 + floating-vue 5.2.2
+#24 23.43 + highlight.js 11.10.0
+#24 23.43 + html-to-image 1.11.13
+#24 23.43 + html2canvas 1.4.1
+#24 23.43 + idb 8.0.0
+#24 23.43 + js-cookie 3.0.5
+#24 23.43 + json-logic-js 2.0.5
+#24 23.43 + lettersanitizer 1.0.6
+#24 23.43 + libphonenumber-js 1.11.9
+#24 23.43 + markdown-it 14.1.1
+#24 23.43 + markdown-it-link-attributes 4.0.1
+#24 23.43 + md5 2.3.0
+#24 23.43 + mitt 3.0.1
+#24 23.43 + opus-recorder 8.0.5
+#24 23.43 + pinia 3.0.4
+#24 23.43 + prosemirror-commands 1.7.1
+#24 23.43 + prosemirror-schema-list 1.5.1
+#24 23.43 + qrcode 1.5.4
+#24 23.43 + semver 7.6.3
+#24 23.43 + snakecase-keys 8.0.1
+#24 23.43 + timezone-phone-codes 0.0.2
+#24 23.43 + tinykeys 3.0.0
+#24 23.43 + turbolinks 5.2.0
+#24 23.43 + urlpattern-polyfill 10.0.0
+#24 23.43 + video.js 7.18.1
+#24 23.43 + videojs-record 4.5.0
+#24 23.43 + videojs-wavesurfer 3.8.0
+#24 23.43 + virtua 0.48.6
+#24 23.43 + vue 3.5.12
+#24 23.43 + vue-chartjs 5.3.1
+#24 23.43 + vue-datepicker-next 1.0.3
+#24 23.43 + vue-dompurify-html 5.3.0
+#24 23.43 + vue-i18n 9.14.5
+#24 23.43 + vue-letter 0.2.1
+#24 23.43 + vue-router 4.4.5
+#24 23.43 + vue-upload-component 3.1.17
+#24 23.43 + vue3-click-away 1.2.4
+#24 23.43 + vuedraggable 4.1.0
+#24 23.43 + vuex 4.1.0
+#24 23.43 + vuex-router-sync 6.0.0-rc.1
+#24 23.43 + wavesurfer.js 7.8.6
+#24 23.43 
+#24 23.43 devDependencies:
+#24 23.43 + @egoist/tailwindcss-icons 1.9.2
+#24 23.43 + @histoire/plugin-vue 0.17.15
+#24 23.43 + @iconify-json/logos 1.2.10
+#24 23.43 + @iconify-json/lucide 1.2.82
+#24 23.43 + @iconify-json/ph 1.2.2
+#24 23.43 + @iconify-json/ri 1.2.6
+#24 23.43 + @iconify-json/teenyicons 1.2.2
+#24 23.43 + @intlify/eslint-plugin-vue-i18n 3.2.0
+#24 23.43 + @size-limit/file 8.2.6
+#24 23.43 + @vitest/coverage-v8 3.0.5
+#24 23.43 + @vue/test-utils 2.4.6
+#24 23.43 + autoprefixer 10.4.20
+#24 23.43 + eslint 8.57.0
+#24 23.43 + eslint-config-airbnb-base 15.0.0
+#24 23.43 + eslint-config-prettier 9.1.0
+#24 23.43 + eslint-interactive 11.1.0
+#24 23.43 + eslint-plugin-html 7.1.0
+#24 23.43 + eslint-plugin-import 2.30.0
+#24 23.43 + eslint-plugin-prettier 5.2.1
+#24 23.43 + eslint-plugin-vitest-globals 1.5.0
+#24 23.43 + eslint-plugin-vue 9.28.0
+#24 23.43 + fake-indexeddb 6.0.0
+#24 23.43 + histoire 0.17.15
+#24 23.43 + husky 7.0.4
+#24 23.43 + jsdom 27.2.0
+#24 23.43 + lint-staged 16.2.7
+#24 23.43 + postcss 8.4.47
+#24 23.43 + postcss-preset-env 8.5.1
+#24 23.43 + prettier 3.3.3
+#24 23.43 + prosemirror-model 1.22.3
+#24 23.43 + size-limit 8.2.6
+#24 23.43 + tailwindcss 3.4.19
+#24 23.43 + vite 5.4.21
+#24 23.43 + vite-plugin-ruby 5.0.0
+#24 23.43 + vitest 3.0.5
+#24 23.43 
+#24 23.43 Ignored build scripts: core-js, esbuild, vue-demi. Run "pnpm approve-builds" to pick which dependencies should be allowed to run scripts.
+#24 23.43 
+#24 23.50 
+#24 23.50 > @chatwoot/chatwoot@4.13.0 prepare /app
+#24 23.50 > husky install
+#24 23.50 
+#24 23.66 fatal: not a git repository (or any of the parent directories): .git
+#24 23.69 Done in 22.9s
+#24 DONE 24.3s
+
+#25 [pre-builder 15/19] COPY . /app
+#25 DONE 11.0s
+
+#26 [pre-builder 16/19] RUN mkdir -p /app/log
+#26 DONE 0.3s
+
+#27 [pre-builder 17/19] RUN if [ "production" = "production" ]; then   SECRET_KEY_BASE=precompile_placeholder RAILS_LOG_TO_STDOUT=enabled bundle exec rake assets:precompile   && rm -rf spec node_modules tmp/cache;   fi
+#27 25.22 /gems/ruby/3.4.0/gems/reline-0.3.6/lib/reline/terminfo.rb:2: warning: /usr/local/lib/ruby/3.4.0/fiddle.rb was loaded from the standard library, but will no longer be part of the default gems starting from Ruby 3.5.0.
+#27 25.22 You can add fiddle to your Gemfile or gemspec to silence this warning.
+#27 25.22 Also please contact the author of reline-0.3.6 to request adding fiddle into its gemspec.
+#27 26.53 W, [2026-05-11T18:55:45.545535 #7]  WARN -- : 
+#27 26.53 !!! RubyLLM's legacy acts_as API is deprecated and will be removed in RubyLLM 2.0.0. Please consult the migration guide at https://rubyllm.com/upgrading-to-1-7/
+#27 26.53 
+#27 27.80 E, [2026-05-11T18:55:46.814288 #7] ERROR -- : Failed to configure AI Agents SDK: There is an issue connecting to your database with your username/password, username: chatwoot_prod.
+#27 27.80 
+#27 27.80 Please check your database configuration to ensure the username/password are valid.
+#27 27.80 
+#27 27.81 I, [2026-05-11T18:55:46.822264 #7]  INFO -- : [rake ip_lookup:setup] IP_LOOKUP_API_KEY empty. Skipping geoip database setup
+#27 29.96 Lockfile is up to date, resolution step is skipped
+#27 30.23 Already up to date
+#27 31.82 
+#27 31.90 
+#27 31.90 > @chatwoot/chatwoot@4.13.0 prepare /app
+#27 31.90 > husky install
+#27 31.90 
+#27 32.02 fatal: not a git repository (or any of the parent directories): .git
+#27 32.04 Done in 3.2s
+#27 32.12 -------------- Bulding SDK for Production --------------
+#27 33.08 
+#27 33.08 > @chatwoot/chatwoot@4.13.0 build:sdk /app
+#27 33.08 > BUILD_MODE=library vite build
+#27 33.08 
+#27 33.53 The CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.
+#27 33.87 vite v5.4.21 building for production...
+#27 33.99 transforming...
+#27 34.84 Browserslist: caniuse-lite is outdated. Please run:
+#27 34.84   npx update-browserslist-db@latest
+#27 34.84   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+#27 35.49 ✓ 33 modules transformed.
+#27 35.49 
+#27 35.49 (!) The public directory feature may not work correctly. outDir /app/public/packs and publicDir /app/public are not separate folders.
+#27 35.49 
+#27 35.72 rendering chunks...
+#27 35.73 computing gzip size...
+#27 35.75 public/packs/js/sdk.js  28.76 kB │ gzip: 9.57 kB
+#27 35.75 ✓ built in 1.82s
+#27 35.86 -------------- Bulding App for Production --------------
+#27 37.34 I, [2026-05-11T18:55:56.351145 #7]  INFO -- : Writing /app/public/assets/manifest-2f0ac84ec540eb753a59078be1e78cb9bb00e12a9a8d6d826039a818a0008610.js
+#27 37.34 I, [2026-05-11T18:55:56.353702 #7]  INFO -- : Writing /app/public/assets/manifest-2f0ac84ec540eb753a59078be1e78cb9bb00e12a9a8d6d826039a818a0008610.js.gz
+#27 37.34 I, [2026-05-11T18:55:56.356755 #7]  INFO -- : Writing /app/public/assets/administrate/application-063079e78401f7204485117315ae46404303200752c6b17ddaeb38ef4e9f64c9.css
+#27 37.34 I, [2026-05-11T18:55:56.358744 #7]  INFO -- : Writing /app/public/assets/administrate/application-063079e78401f7204485117315ae46404303200752c6b17ddaeb38ef4e9f64c9.css.gz
+#27 37.35 I, [2026-05-11T18:55:56.361039 #7]  INFO -- : Writing /app/public/assets/administrate/application-0ca1ebe5baf40d486024c2af43f59c99db8ee966ae8440eaa75b247d725f91f1.js
+#27 37.35 I, [2026-05-11T18:55:56.362147 #7]  INFO -- : Writing /app/public/assets/administrate/application-0ca1ebe5baf40d486024c2af43f59c99db8ee966ae8440eaa75b247d725f91f1.js.gz
+#27 37.35 I, [2026-05-11T18:55:56.363956 #7]  INFO -- : Writing /app/public/assets/administrate-field-active_storage/application-491e0febefaa4b7923c60e77838dadb71e679fcc07232cd97198fb364d300152.css
+#27 37.35 I, [2026-05-11T18:55:56.365995 #7]  INFO -- : Writing /app/public/assets/administrate-field-active_storage/application-491e0febefaa4b7923c60e77838dadb71e679fcc07232cd97198fb364d300152.css.gz
+#27 37.35 I, [2026-05-11T18:55:56.368571 #7]  INFO -- : Writing /app/public/assets/secretField-18ee01c6525855cf76aaca98ae1141bb825839f86bb702d5524f88c0996a26b2.js
+#27 37.35 I, [2026-05-11T18:55:56.369600 #7]  INFO -- : Writing /app/public/assets/secretField-18ee01c6525855cf76aaca98ae1141bb825839f86bb702d5524f88c0996a26b2.js.gz
+#27 37.36 I, [2026-05-11T18:55:56.371530 #7]  INFO -- : Writing /app/public/assets/actiontext-78de0ebeae470799f9ec25fd0e20ae2d931df88c2ff9315918d1054a2fca2596.js
+#27 37.36 I, [2026-05-11T18:55:56.373313 #7]  INFO -- : Writing /app/public/assets/actiontext-78de0ebeae470799f9ec25fd0e20ae2d931df88c2ff9315918d1054a2fca2596.js.gz
+#27 37.36 I, [2026-05-11T18:55:56.375312 #7]  INFO -- : Writing /app/public/assets/actiontext.esm-328ef022563f73c1b9b45ace742bd21330da0f6bd6c1c96d352d52fc8b8857e5.js
+#27 37.37 I, [2026-05-11T18:55:56.380131 #7]  INFO -- : Writing /app/public/assets/actiontext.esm-328ef022563f73c1b9b45ace742bd21330da0f6bd6c1c96d352d52fc8b8857e5.js.gz
+#27 37.37 I, [2026-05-11T18:55:56.382051 #7]  INFO -- : Writing /app/public/assets/trix-b6d103912a6c8078fed14e45716425fb78de5abfbe7b626cd5d9b25b35265066.js
+#27 37.37 I, [2026-05-11T18:55:56.383602 #7]  INFO -- : Writing /app/public/assets/trix-b6d103912a6c8078fed14e45716425fb78de5abfbe7b626cd5d9b25b35265066.js.gz
+#27 37.37 I, [2026-05-11T18:55:56.386631 #7]  INFO -- : Writing /app/public/assets/trix-fac9fbf27cd0745d3679d5bcb2f03808303584fba37b06fde11061331daac7a6.css
+#27 37.38 I, [2026-05-11T18:55:56.391032 #7]  INFO -- : Writing /app/public/assets/trix-fac9fbf27cd0745d3679d5bcb2f03808303584fba37b06fde11061331daac7a6.css.gz
+#27 37.38 I, [2026-05-11T18:55:56.393861 #7]  INFO -- : Writing /app/public/assets/administrate/application-0ca1ebe5baf40d486024c2af43f59c99db8ee966ae8440eaa75b247d725f91f1.js.gz
+#27 37.38 I, [2026-05-11T18:55:56.396227 #7]  INFO -- : Writing /app/public/assets/belongs_to_search-25faa07e8d60e491e6f1218e5307b9e70ea1bb0a51e4a724a37e797cea81e9da.js
+#27 37.39 I, [2026-05-11T18:55:56.400646 #7]  INFO -- : Writing /app/public/assets/belongs_to_search-25faa07e8d60e491e6f1218e5307b9e70ea1bb0a51e4a724a37e797cea81e9da.js.gz
+#27 37.39 I, [2026-05-11T18:55:56.402318 #7]  INFO -- : Writing /app/public/assets/activestorage-503a4fe23aabfbcb752dad255f01835904e6961d5f20d1de13987a691c27d9cd.js
+#27 37.39 I, [2026-05-11T18:55:56.403943 #7]  INFO -- : Writing /app/public/assets/activestorage-503a4fe23aabfbcb752dad255f01835904e6961d5f20d1de13987a691c27d9cd.js.gz
+#27 37.39 I, [2026-05-11T18:55:56.405311 #7]  INFO -- : Writing /app/public/assets/activestorage.esm-b3f7f0a5ef90530b509c5e681c4b3ef5d5046851e5b70d57fdb45e32b039c883.js
+#27 37.39 I, [2026-05-11T18:55:56.405829 #7]  INFO -- : Writing /app/public/assets/activestorage.esm-b3f7f0a5ef90530b509c5e681c4b3ef5d5046851e5b70d57fdb45e32b039c883.js.gz
+#27 37.40 I, [2026-05-11T18:55:56.407954 #7]  INFO -- : Writing /app/public/assets/actioncable-1c7f008c6deb7b55c6878be38700ff6bf56b75444a086fa1f46e3b781365a3ea.js
+#27 37.40 I, [2026-05-11T18:55:56.413009 #7]  INFO -- : Writing /app/public/assets/actioncable-1c7f008c6deb7b55c6878be38700ff6bf56b75444a086fa1f46e3b781365a3ea.js.gz
+#27 37.40 I, [2026-05-11T18:55:56.416307 #7]  INFO -- : Writing /app/public/assets/actioncable.esm-06609b0ecaffe2ab952021b9c8df8b6c68f65fc23bee728fc678a2605e1ce132.js
+#27 37.41 I, [2026-05-11T18:55:56.423414 #7]  INFO -- : Writing /app/public/assets/actioncable.esm-06609b0ecaffe2ab952021b9c8df8b6c68f65fc23bee728fc678a2605e1ce132.js.gz
+#27 38.65 Lockfile is up to date, resolution step is skipped
+#27 38.93 Already up to date
+#27 39.90 
+#27 40.00 
+#27 40.00 > @chatwoot/chatwoot@4.13.0 prepare /app
+#27 40.00 > husky install
+#27 40.00 
+#27 40.09 fatal: not a git repository (or any of the parent directories): .git
+#27 40.12 Done in 2.5s
+#27 41.08 Building with Vite ⚡️
+#27 42.85 vite v5.4.21 building for production...
+#27 43.08 transforming...
+#27 140.2 ✓ 4538 modules transformed.
+#27 145.2 rendering chunks...
+#27 170.1 computing gzip size...
+#27 173.7 ../../public/vite/.vite/manifest-assets.json                          0.00 kB │ gzip:     0.02 kB
+#27 173.7 ../../public/vite/assets/pf-CEX9Vx76.svg                              4.11 kB │ gzip:     1.73 kB
+#27 173.7 ../../public/vite/assets/pf-CMTHIumB.svg                              4.15 kB │ gzip:     1.72 kB
+#27 173.7 ../../public/vite/assets/sz-DpZ3V1AK.svg                              4.75 kB │ gzip:     1.95 kB
+#27 173.7 ../../public/vite/assets/sz-BC3w3Gmj.svg                              4.80 kB │ gzip:     1.97 kB
+#27 173.7 ../../public/vite/assets/gu-wFhsTC1Y.svg                              4.91 kB │ gzip:     1.91 kB
+#27 173.7 ../../public/vite/assets/gq-OBiOttRB.svg                              5.07 kB │ gzip:     2.05 kB
+#27 173.7 ../../public/vite/assets/gu-Bkjkorus.svg                              5.10 kB │ gzip:     2.00 kB
+#27 173.7 ../../public/vite/assets/gq-BvOxIUGP.svg                              5.16 kB │ gzip:     2.15 kB
+#27 173.7 ../../public/vite/assets/zm-CNg0kgkw.svg                              5.41 kB │ gzip:     2.29 kB
+#27 173.7 ../../public/vite/assets/zm-BmHUGSoa.svg                              5.51 kB │ gzip:     2.29 kB
+#27 173.7 ../../public/vite/assets/nf--j2oelto.svg                              5.56 kB │ gzip:     2.44 kB
+#27 173.7 ../../public/vite/assets/ki-COZ8g898.svg                              5.64 kB │ gzip:     1.64 kB
+#27 173.7 ../../public/vite/assets/ki-CM44VBPm.svg                              5.81 kB │ gzip:     1.70 kB
+#27 173.7 ../../public/vite/assets/nf-COchEj81.svg                              5.81 kB │ gzip:     2.55 kB
+#27 173.7 ../../public/vite/assets/cy-VQFkW-qk.svg                              5.91 kB │ gzip:     2.52 kB
+#27 173.7 ../../public/vite/assets/cy-Bgo0XIP0.svg                              6.00 kB │ gzip:     2.57 kB
+#27 173.7 ../../public/vite/assets/ms-7tNehsjt.svg                              6.07 kB │ gzip:     2.61 kB
+#27 173.7 ../../public/vite/assets/ms-D--tLJBo.svg                              6.12 kB │ gzip:     2.56 kB
+#27 173.7 ../../public/vite/assets/no-chat-dark-BSWrQBd3.svg                    6.35 kB │ gzip:     2.40 kB
+#27 173.7 ../../public/vite/assets/zw-DGkTG73v.svg                              6.65 kB │ gzip:     2.61 kB
+#27 173.7 ../../public/vite/assets/zw-Ceqd3Xj3.svg                              6.67 kB │ gzip:     2.64 kB
+#27 173.7 ../../public/vite/assets/no-chat-okxWD-4P.svg                         6.68 kB │ gzip:     2.48 kB
+#27 173.7 ../../public/vite/assets/tc-CYGgqbY-.svg                              7.15 kB │ gzip:     3.00 kB
+#27 173.7 ../../public/vite/assets/tc-BB3tFO-G.svg                              7.15 kB │ gzip:     3.00 kB
+#27 173.7 ../../public/vite/assets/kh-V4Sa3vlt.svg                              7.28 kB │ gzip:     2.77 kB
+#27 173.7 ../../public/vite/assets/kh-CAffWc0R.svg                              7.28 kB │ gzip:     2.78 kB
+#27 173.7 ../../public/vite/assets/kz-DBjWpOlG.svg                              7.29 kB │ gzip:     2.99 kB
+#27 173.7 ../../public/vite/assets/kz-BBCbe9jj.svg                              7.29 kB │ gzip:     2.98 kB
+#27 173.7 ../../public/vite/assets/br-Yf30zEjB.svg                              7.68 kB │ gzip:     2.54 kB
+#27 173.7 ../../public/vite/assets/br-DaE4AJQY.svg                              8.10 kB │ gzip:     2.74 kB
+#27 173.7 ../../public/vite/assets/li-DgeenFRc.svg                              8.25 kB │ gzip:     3.25 kB
+#27 173.7 ../../public/vite/assets/li-y6TPS81M.svg                              8.27 kB │ gzip:     3.26 kB
+#27 173.7 ../../public/vite/assets/pt-BV5okG4O.svg                              8.32 kB │ gzip:     3.34 kB
+#27 173.7 ../../public/vite/assets/vi-1FTBesw2.svg                              8.62 kB │ gzip:     3.61 kB
+#27 173.7 ../../public/vite/assets/xk-B6uU6dIH.svg                              8.63 kB │ gzip:     3.24 kB
+#27 173.7 ../../public/vite/assets/pt-BLLm3V0o.svg                              8.67 kB │ gzip:     3.36 kB
+#27 173.7 ../../public/vite/assets/vi-DatfOFqY.svg                              8.68 kB │ gzip:     3.65 kB
+#27 173.7 ../../public/vite/assets/aw-W0PWLK5p.svg                              9.00 kB │ gzip:     1.67 kB
+#27 173.7 ../../public/vite/assets/gb-wls-lLp_JivI.svg                          9.07 kB │ gzip:     4.05 kB
+#27 173.7 ../../public/vite/assets/gb-wls-C4LdH8Nd.svg                          9.18 kB │ gzip:     4.17 kB
+#27 173.7 ../../public/vite/assets/xk-F5dDvX79.svg                              9.31 kB │ gzip:     3.50 kB
+#27 173.7 ../../public/vite/assets/eg-BIzzVp3n.svg                              9.85 kB │ gzip:     3.88 kB
+#27 173.7 ../../public/vite/assets/eg-C1MYAOXe.svg                              9.87 kB │ gzip:     3.89 kB
+#27 173.7 ../../public/vite/assets/im-BAoxVCMv.svg                              9.90 kB │ gzip:     3.77 kB
+#27 173.7 ../../public/vite/assets/sa-eH5F7cXy.svg                             10.17 kB │ gzip:     4.26 kB
+#27 173.7 ../../public/vite/assets/im-deD7ny0b.svg                             10.22 kB │ gzip:     4.01 kB
+#27 173.7 ../../public/vite/assets/sa-DLf2NaXn.svg                             10.24 kB │ gzip:     4.31 kB
+#27 173.7 ../../public/vite/assets/aw-CLCX8uk5.svg                             10.36 kB │ gzip:     1.79 kB
+#27 173.7 ../../public/vite/assets/vg-qlt33Cv3.svg                             10.39 kB │ gzip:     4.28 kB
+#27 173.7 ../../public/vite/assets/vg-DKEU1GdO.svg                             10.41 kB │ gzip:     4.27 kB
+#27 173.7 ../../public/vite/assets/md-DArlF80d.svg                             11.20 kB │ gzip:     2.85 kB
+#27 173.7 ../../public/vite/assets/md-DRw6DF0o.svg                             11.31 kB │ gzip:     2.72 kB
+#27 173.7 ../../public/vite/assets/lk-B2IfFxoh.svg                             11.34 kB │ gzip:     4.63 kB
+#27 173.7 ../../public/vite/assets/lk-DIvkWByA.svg                             11.35 kB │ gzip:     4.63 kB
+#27 173.7 ../../public/vite/assets/sx-DzlMoqh2.svg                             12.95 kB │ gzip:     4.40 kB
+#27 173.7 ../../public/vite/assets/sx-4BiL6F_v.svg                             13.14 kB │ gzip:     4.61 kB
+#27 173.7 ../../public/vite/assets/mt-DeenPMqd.svg                             13.73 kB │ gzip:     5.65 kB
+#27 173.7 ../../public/vite/assets/pn-DEs-Vj71.svg                             13.84 kB │ gzip:     5.03 kB
+#27 173.7 ../../public/vite/assets/pn-vyD5VXw1.svg                             13.88 kB │ gzip:     5.09 kB
+#27 173.7 ../../public/vite/assets/eac-CZCl_pn7.svg                            14.22 kB │ gzip:     4.98 kB
+#27 173.7 ../../public/vite/assets/eac-D_uIzpYR.svg                            14.23 kB │ gzip:     4.98 kB
+#27 173.7 ../../public/vite/assets/bn-BDKbSv-u.svg                             14.32 kB │ gzip:     5.94 kB
+#27 173.7 ../../public/vite/assets/bn-UGyQANfK.svg                             14.46 kB │ gzip:     5.96 kB
+#27 173.7 ../../public/vite/assets/ht-DPCqX9cm.svg                             14.57 kB │ gzip:     5.13 kB
+#27 173.7 ../../public/vite/assets/mt-0OWB-5b3.svg                             14.64 kB │ gzip:     6.04 kB
+#27 173.7 ../../public/vite/assets/ht-HoSCtdNQ.svg                             14.70 kB │ gzip:     5.17 kB
+#27 173.7 ../../public/vite/assets/ir-CXFV1BFU.svg                             15.31 kB │ gzip:     2.29 kB
+#27 173.7 ../../public/vite/assets/ir-cCIgaNf6.svg                             15.40 kB │ gzip:     2.24 kB
+#27 173.7 ../../public/vite/assets/sm-DHRSzt4z.svg                             15.66 kB │ gzip:     5.38 kB
+#27 173.7 ../../public/vite/assets/sm-1NcqoN_z.svg                             15.77 kB │ gzip:     5.28 kB
+#27 173.7 ../../public/vite/assets/dm-BlhP-6zy.svg                             15.82 kB │ gzip:     3.08 kB
+#27 173.7 ../../public/vite/assets/dm-ClJ_IDld.svg                             16.31 kB │ gzip:     3.24 kB
+#27 173.7 ../../public/vite/assets/facebook_login-_skaVloV.png                 16.39 kB
+#27 173.7 ../../public/vite/assets/py-BfpB8kRi.svg                             17.19 kB │ gzip:     6.09 kB
+#27 173.7 ../../public/vite/assets/py-CRTEf2ay.svg                             17.36 kB │ gzip:     6.17 kB
+#27 173.7 ../../public/vite/assets/ni-CC3zFI7h.svg                             18.44 kB │ gzip:     5.75 kB
+#27 173.7 ../../public/vite/assets/ni-ChnV2lR-.svg                             18.49 kB │ gzip:     5.81 kB
+#27 173.7 ../../public/vite/assets/typing-DYm07fFx.gif                         19.30 kB
+#27 173.7 ../../public/vite/assets/un-0G1DCZ6c.svg                             20.05 kB │ gzip:     7.92 kB
+#27 173.7 ../../public/vite/assets/un-BQ1kEGox.svg                             20.29 kB │ gzip:     8.04 kB
+#27 173.7 ../../public/vite/assets/af-Cc32fsDB.svg                             20.92 kB │ gzip:     8.30 kB
+#27 173.7 ../../public/vite/assets/af-CI4E3ER1.svg                             21.06 kB │ gzip:     8.36 kB
+#27 173.7 ../../public/vite/assets/om-Ri__rIwP.svg                             22.61 kB │ gzip:     4.45 kB
+#27 173.7 ../../public/vite/assets/om-DnUPbroW.svg                             22.62 kB │ gzip:     4.44 kB
+#27 173.7 ../../public/vite/assets/bm-D2j4bkLD.svg                             22.73 kB │ gzip:     7.25 kB
+#27 173.7 ../../public/vite/assets/bm-BoWRAtUx.svg                             22.81 kB │ gzip:     7.25 kB
+#27 173.7 ../../public/vite/assets/io-BzKkDPkD.svg                             22.88 kB │ gzip:     4.14 kB
+#27 173.7 ../../public/vite/assets/dg-CPWO5scz.svg                             22.88 kB │ gzip:     4.14 kB
+#27 173.7 ../../public/vite/assets/io-Bkx8USW1.svg                             23.16 kB │ gzip:     4.16 kB
+#27 173.7 ../../public/vite/assets/dg-B55Nvqqm.svg                             23.16 kB │ gzip:     4.16 kB
+#27 173.7 ../../public/vite/assets/mp-xI88Vk3c.svg                             23.33 kB │ gzip:     7.19 kB
+#27 173.7 ../../public/vite/assets/mp-DOjKDFJv.svg                             23.58 kB │ gzip:     7.25 kB
+#27 173.7 ../../public/vite/assets/gb-nir-BOm9QMOa.svg                         23.59 kB │ gzip:     6.30 kB
+#27 173.7 ../../public/vite/assets/ky-D_l3blFP.svg                             23.99 kB │ gzip:     8.63 kB
+#27 173.7 ../../public/vite/assets/ky-BqProAqG.svg                             24.01 kB │ gzip:     8.62 kB
+#27 173.7 ../../public/vite/assets/bt-Cm0R6rAQ.svg                             24.91 kB │ gzip:    10.08 kB
+#27 173.7 ../../public/vite/assets/bt-Csq9bKsA.svg                             25.12 kB │ gzip:    10.18 kB
+#27 173.7 ../../public/vite/assets/gb-nir-BZUeOVwE.svg                         25.13 kB │ gzip:     5.79 kB
+#27 173.7 ../../public/vite/assets/fj-DLvzYbo8.svg                             25.69 kB │ gzip:     9.56 kB
+#27 173.7 ../../public/vite/assets/fj-CJDn3VQ8.svg                             25.79 kB │ gzip:     9.65 kB
+#27 173.7 ../../public/vite/assets/arab-DwNob5Qo.svg                           26.34 kB │ gzip:     9.21 kB
+#27 173.7 ../../public/vite/assets/arab-PzQTPYwO.svg                           26.46 kB │ gzip:     9.21 kB
+#27 173.7 ../../public/vite/assets/es-ga-BbFllROk.svg                          28.63 kB │ gzip:     6.35 kB
+#27 173.7 ../../public/vite/assets/es-ga-RI_ZudJJ.svg                          28.74 kB │ gzip:     6.34 kB
+#27 173.7 ../../public/vite/assets/ec-LNhQ9L4k.svg                             28.97 kB │ gzip:     6.89 kB
+#27 173.7 ../../public/vite/assets/va-BntFJQHU.svg                             29.40 kB │ gzip:     9.89 kB
+#27 173.7 ../../public/vite/assets/va-maDzWwNR.svg                             29.46 kB │ gzip:     9.91 kB
+#27 173.7 ../../public/vite/assets/ec-sTVr1A3S.svg                             29.55 kB │ gzip:     6.77 kB
+#27 173.7 ../../public/vite/assets/fk-Ck9cznm4.svg                             30.04 kB │ gzip:     9.56 kB
+#27 173.7 ../../public/vite/assets/fk-Be42QBCW.svg                             30.31 kB │ gzip:     9.37 kB
+#27 173.7 ../../public/vite/assets/sh-ta-DNDOtP8t.svg                          30.57 kB │ gzip:    11.36 kB
+#27 173.7 ../../public/vite/assets/sh-ta-clv2MsBt.svg                          30.83 kB │ gzip:    11.52 kB
+#27 173.7 ../../public/vite/assets/as-D2gsNMrP.svg                             32.25 kB │ gzip:    11.92 kB
+#27 173.7 ../../public/vite/assets/ad-CDtWnnSA.svg                             32.46 kB │ gzip:    11.62 kB
+#27 173.7 ../../public/vite/assets/as-_t1IQUdv.svg                             32.50 kB │ gzip:    12.02 kB
+#27 173.7 ../../public/vite/assets/gs-Di8hLP4g.svg                             32.53 kB │ gzip:    11.73 kB
+#27 173.7 ../../public/vite/assets/gs-PK6r6yhR.svg                             33.02 kB │ gzip:    11.45 kB
+#27 173.7 ../../public/vite/assets/ad-BOo-tPI4.svg                             33.68 kB │ gzip:    12.13 kB
+#27 173.7 ../../public/vite/assets/gt-CovS1bZs.svg                             35.09 kB │ gzip:    12.35 kB
+#27 173.7 ../../public/vite/assets/gt-Ufdm0MFv.svg                             35.09 kB │ gzip:    12.35 kB
+#27 173.7 ../../public/vite/assets/sh-hl-DWwv0HRi.svg                          38.31 kB │ gzip:    13.42 kB
+#27 173.7 ../../public/vite/assets/tm-CCv743R_.svg                             38.37 kB │ gzip:    12.01 kB
+#27 173.7 ../../public/vite/assets/tm-DYhdxDK7.svg                             38.50 kB │ gzip:    12.11 kB
+#27 173.7 ../../public/vite/assets/sh-hl-CnGxQM93.svg                          38.83 kB │ gzip:    13.71 kB
+#27 173.7 ../../public/vite/assets/hr-cWEworf7.svg                             41.18 kB │ gzip:    15.80 kB
+#27 173.7 ../../public/vite/assets/hr-C7VqhX5l.svg                             41.37 kB │ gzip:    15.98 kB
+#27 173.7 ../../public/vite/assets/je-PUw16g1j.svg                             46.07 kB │ gzip:    12.13 kB
+#27 173.7 ../../public/vite/assets/bz-YpwBidLU.svg                             46.67 kB │ gzip:    16.80 kB
+#27 173.7 ../../public/vite/assets/je-YWv5VSiQ.svg                             46.77 kB │ gzip:    12.47 kB
+#27 173.7 ../../public/vite/assets/bz-CqiVUvof.svg                             46.96 kB │ gzip:    16.82 kB
+#27 173.7 ../../public/vite/assets/do--tGVu9lQ.svg                             50.07 kB │ gzip:    16.78 kB
+#27 173.7 ../../public/vite/assets/do-DJGo0v5t.svg                             50.86 kB │ gzip:    17.04 kB
+#27 173.7 ../../public/vite/assets/me-B32CQdRA.svg                             62.57 kB │ gzip:    23.16 kB
+#27 173.7 ../../public/vite/assets/me-BUFcTh_w.svg                             63.55 kB │ gzip:    23.56 kB
+#27 173.7 ../../public/vite/.vite/manifest.json                                69.70 kB │ gzip:     7.04 kB
+#27 173.7 ../../public/vite/assets/sv-n55iiUxg.svg                             82.82 kB │ gzip:    23.62 kB
+#27 173.7 ../../public/vite/assets/sv-BGK8a8aZ.svg                             83.34 kB │ gzip:    23.81 kB
+#27 173.7 ../../public/vite/assets/mx-4c9y9ryX.svg                             88.84 kB │ gzip:    30.39 kB
+#27 173.7 ../../public/vite/assets/es-DL6RIaKh.svg                             91.01 kB │ gzip:    16.37 kB
+#27 173.7 ../../public/vite/assets/es-CR0ZfKpD.svg                             92.80 kB │ gzip:    17.17 kB
+#27 173.7 ../../public/vite/assets/mx-C7ivyfFO.svg                             93.45 kB │ gzip:    32.18 kB
+#27 173.7 ../../public/vite/assets/InterDisplay-Regular-C0mmbI_t.woff2        105.57 kB
+#27 173.7 ../../public/vite/assets/InterDisplay-Thin-DMFvXDOM.woff2           106.24 kB
+#27 173.7 ../../public/vite/assets/Inter-Thin-B4o5siQk.woff2                  106.62 kB
+#27 173.7 ../../public/vite/assets/InterDisplay-Black-DM1fLmGj.woff2          107.22 kB
+#27 173.7 ../../public/vite/assets/Inter-Regular-B0QUfDW0.woff2               108.49 kB
+#27 173.7 ../../public/vite/assets/InterDisplay-ExtraLight-CkrcZ2OC.woff2     109.66 kB
+#27 173.7 ../../public/vite/assets/InterDisplay-Light-DB1R7qf0.woff2          109.86 kB
+#27 173.7 ../../public/vite/assets/Inter-Light-MWFfSqj5.woff2                 109.99 kB
+#27 173.7 ../../public/vite/assets/InterDisplay-Medium-BRBaQVhl.woff2         110.01 kB
+#27 173.7 ../../public/vite/assets/InterDisplay-Bold-CXJyJlfA.woff2           110.18 kB
+#27 173.7 ../../public/vite/assets/InterDisplay-SemiBold-J6ePsRbj.woff2       110.23 kB
+#27 173.7 ../../public/vite/assets/InterDisplay-ExtraBold-DsWMgBJM.woff2      110.30 kB
+#27 173.7 ../../public/vite/assets/Inter-Bold-CytjP_7U.woff2                  111.04 kB
+#27 173.7 ../../public/vite/assets/Inter-Medium-B0NFony0.woff2                111.38 kB
+#27 173.7 ../../public/vite/assets/Inter-SemiBold-_JLwM7Yv.woff2              111.59 kB
+#27 173.7 ../../public/vite/assets/bo-BqtZbaiW.svg                            112.08 kB │ gzip:    27.17 kB
+#27 173.7 ../../public/vite/assets/bo-CP9m75_5.svg                            114.01 kB │ gzip:    27.60 kB
+#27 173.7 ../../public/vite/assets/Inter-Italic-B_ozvy2G.woff2                114.58 kB
+#27 173.7 ../../public/vite/assets/signup-bg-DFyqN1ma.jpg                     132.94 kB
+#27 173.7 ../../public/vite/assets/sh-ac-6pU0wZVL.svg                         153.41 kB │ gzip:    50.86 kB
+#27 173.7 ../../public/vite/assets/sh-ac-Ch9Jh9Lp.svg                         156.13 kB │ gzip:    51.52 kB
+#27 173.7 ../../public/vite/assets/rs-D2wyuxjv.svg                            184.05 kB │ gzip:    50.63 kB
+#27 173.7 ../../public/vite/assets/rs-Dv4N4BPN.svg                            184.17 kB │ gzip:    50.88 kB
+#27 173.7 ../../public/vite/assets/InterVariable-CWi-zmRD.woff2               345.59 kB
+#27 173.7 ../../public/vite/assets/InterVariable-Italic-d6KXgdvN.woff2        380.90 kB
+#27 173.7 ../../public/vite/assets/CategoryHeaderControls-cqbKpO11.css          0.05 kB │ gzip:     0.07 kB
+#27 173.7 ../../public/vite/assets/PortalsArticlesIndexPage-Ddsik1PH.css        0.17 kB │ gzip:     0.13 kB
+#27 173.7 ../../public/vite/assets/commandbar-DaCNDihA.css                      0.41 kB │ gzip:     0.23 kB
+#27 173.7 ../../public/vite/assets/DashboardIcon-DIfX85bS.css                   1.24 kB │ gzip:     0.26 kB
+#27 173.7 ../../public/vite/assets/useBranding-DSFJg_40.css                     1.42 kB │ gzip:     0.49 kB
+#27 173.7 ../../public/vite/assets/PreChatForm-DG6Nqb5u.css                     1.79 kB │ gzip:     0.44 kB
+#27 173.7 ../../public/vite/assets/UnreadMessageList-DEnPU2qp.css               3.36 kB │ gzip:     0.83 kB
+#27 173.7 ../../public/vite/assets/ArticleEditor-Bx67UQQy.css                  12.50 kB │ gzip:     2.87 kB
+#27 173.7 ../../public/vite/assets/Messages-CDRennRs.css                       14.83 kB │ gzip:     2.49 kB
+#27 173.7 ../../public/vite/assets/EmojiInput-C32x6UjJ.css                    584.27 kB │ gzip:    50.23 kB
+#27 173.7 ../../public/vite/assets/portal-DxEx-tV2.css                        828.85 kB │ gzip:    84.36 kB
+#27 173.7 ../../public/vite/assets/superadmin-DWZ8U7si.css                    830.76 kB │ gzip:    86.16 kB
+#27 173.7 ../../public/vite/assets/v3app-B2jxcvqy.css                         832.66 kB │ gzip:    86.93 kB
+#27 173.7 ../../public/vite/assets/survey-Cqaqgq8U.css                        834.41 kB │ gzip:    87.63 kB
+#27 173.7 ../../public/vite/assets/widget-CvBDaTAB.css                        850.50 kB │ gzip:    88.89 kB
+#27 173.7 ../../public/vite/assets/dashboard-dPUEkeIx.css                   1,956.15 kB │ gzip:   239.08 kB
+#27 173.7 ../../public/vite/assets/superadmin-CkWfR750.js                       0.05 kB │ gzip:     0.07 kB │ map:     0.10 kB
+#27 173.7 ../../public/vite/assets/constants-lVAyZKq6.js                        0.16 kB │ gzip:     0.17 kB │ map:     0.58 kB
+#27 173.7 ../../public/vite/assets/ArticleViewer-jAHyjA36.js                    0.51 kB │ gzip:     0.37 kB │ map:     0.75 kB
+#27 173.7 ../../public/vite/assets/_commonjsHelpers-BosuxZz1.js                 0.75 kB │ gzip:     0.43 kB │ map:     0.11 kB
+#27 173.7 ../../public/vite/assets/index-DN3rM4CW.js                            0.89 kB │ gzip:     0.53 kB │ map:     5.33 kB
+#27 173.7 ../../public/vite/assets/Button-eo2FN38r.js                           1.01 kB │ gzip:     0.59 kB │ map:     2.29 kB
+#27 173.7 ../../public/vite/assets/UnreadMessages--bZjOwEA.js                   1.07 kB │ gzip:     0.62 kB │ map:     1.16 kB
+#27 173.7 ../../public/vite/assets/sharedFrameEvents-0qZ2yOho.js                1.08 kB │ gzip:     0.63 kB │ map:     5.17 kB
+#27 173.7 ../../public/vite/assets/StarRating-CqhPvfog.js                       1.19 kB │ gzip:     0.70 kB │ map:     2.29 kB
+#27 173.7 ../../public/vite/assets/Campaigns-BT_tYguH.js                        1.23 kB │ gzip:     0.69 kB │ map:     1.73 kB
+#27 173.7 ../../public/vite/assets/js.cookie-Cz0CWeBA.js                        1.46 kB │ gzip:     0.76 kB │ map:     5.89 kB
+#27 173.7 ../../public/vite/assets/Branding-BbtqHT6Y.js                         1.55 kB │ gzip:     0.88 kB │ map:     3.52 kB
+#27 173.7 ../../public/vite/assets/PortalsArticlesNewPage-BWwMOBgU.js           2.15 kB │ gzip:     1.12 kB │ map:     4.61 kB
+#27 173.7 ../../public/vite/assets/PortalsArticlesEditPage-si4KkKFf.js          2.34 kB │ gzip:     1.17 kB │ map:     5.27 kB
+#27 173.7 ../../public/vite/assets/IframeLoader-CS0jhwBH.js                     2.55 kB │ gzip:     0.93 kB │ map:     4.45 kB
+#27 173.7 ../../public/vite/assets/useKeyboardNavigableList-BAy2yOF5.js         3.65 kB │ gzip:     1.82 kB │ map:    19.11 kB
+#27 173.7 ../../public/vite/assets/UnreadMessageList-BEoS96AR.js                4.14 kB │ gzip:     1.82 kB │ map:    11.39 kB
+#27 173.7 ../../public/vite/assets/colorHelper-DkkSNPxc.js                      4.45 kB │ gzip:     2.51 kB │ map:    23.99 kB
+#27 173.7 ../../public/vite/assets/EmojiInput-Bf8rcU8t.js                       4.64 kB │ gzip:     2.04 kB │ map:    11.70 kB
+#27 173.7 ../../public/vite/assets/HelpCenterLayout-rgSPR6Sz.js                 5.36 kB │ gzip:     2.29 kB │ map:    11.19 kB
+#27 173.7 ../../public/vite/assets/Home-DJXSgS7D.js                             5.75 kB │ gzip:     2.48 kB │ map:    13.95 kB
+#27 173.7 ../../public/vite/assets/Icon-DzbDd_Ew.js                             5.94 kB │ gzip:     2.09 kB │ map:    18.07 kB
+#27 173.7 ../../public/vite/assets/FloatingCallWidget-zw758OM-.js               6.11 kB │ gzip:     2.32 kB │ map:    13.60 kB
+#27 173.7 ../../public/vite/assets/superadmin_pages-B-Q3Pfa_.js                 7.02 kB │ gzip:     2.93 kB │ map:    11.81 kB
+#27 173.7 ../../public/vite/assets/module-BqxCsuv1.js                           8.55 kB │ gzip:     3.63 kB │ map:     4.32 kB
+#27 173.7 ../../public/vite/assets/PortalsLocalesIndexPage-CGstW6vJ.js         10.12 kB │ gzip:     3.64 kB │ map:    23.52 kB
+#27 173.7 ../../public/vite/assets/CategoryHeaderControls-CYjGmEt1.js          11.27 kB │ gzip:     3.90 kB │ map:    22.69 kB
+#27 173.7 ../../public/vite/assets/PortalsCategoriesIndexPage-BXLZOlhW.js      11.85 kB │ gzip:     4.57 kB │ map:    26.32 kB
+#27 173.7 ../../public/vite/assets/PortalsArticlesIndexPage-TVY1XBoN.js        12.02 kB │ gzip:     4.47 kB │ map:    32.81 kB
+#27 173.7 ../../public/vite/assets/PreChatForm-ZbVwX0O5.js                     12.69 kB │ gzip:     4.92 kB │ map:    32.62 kB
+#27 173.7 ../../public/vite/assets/PortalsSettingsIndexPage-D04ynOb8.js        22.78 kB │ gzip:     6.35 kB │ map:    48.68 kB
+#27 173.7 ../../public/vite/assets/ArticleEditor-t3qI6Oqw.js                   23.01 kB │ gzip:     8.14 kB │ map:    66.73 kB
+#27 173.7 ../../public/vite/assets/index-BfwFaJxV.js                           23.01 kB │ gzip:     7.94 kB │ map:    89.37 kB
+#27 173.7 ../../public/vite/assets/sdk-DGy57ia5.js                             25.92 kB │ gzip:     8.42 kB │ map:    74.48 kB
+#27 173.7 ../../public/vite/assets/survey-t4tx3Kwe.js                          30.37 kB │ gzip:    14.13 kB │ map:    23.89 kB
+#27 173.7 ../../public/vite/assets/Messages-DOwiupxg.js                        48.24 kB │ gzip:    13.73 kB │ map:   119.31 kB
+#27 173.7 ../../public/vite/assets/helper-BVTgYTlr.js                          58.52 kB │ gzip:    16.28 kB │ map:   162.49 kB
+#27 173.7 ../../public/vite/assets/widget-C-yX2NYS.js                          61.07 kB │ gzip:    18.97 kB │ map:   206.51 kB
+#27 173.7 ../../public/vite/assets/utils.esm-CFY6jNqH.js                       83.81 kB │ gzip:    26.17 kB │ map:   326.68 kB
+#27 173.7 ../../public/vite/assets/portal-DAlIReJd.js                          85.91 kB │ gzip:    26.94 kB │ map:   227.77 kB
+#27 173.7 ../../public/vite/assets/useBranding-yN4j86Oq.js                     88.93 kB │ gzip:    29.57 kB │ map:   485.85 kB
+#27 173.7 ../../public/vite/assets/Validators-CNQplBa1.js                      91.59 kB │ gzip:    31.59 kB │ map:   592.66 kB
+#27 173.7 ../../public/vite/assets/commandbar-ib1BrIZV.js                     102.37 kB │ gzip:    30.89 kB │ map:   231.81 kB
+#27 173.7 ../../public/vite/assets/vue-dompurify-html-Bb1lQ-LC.js             118.41 kB │ gzip:    56.39 kB │ map:   535.95 kB
+#27 173.7 ../../public/vite/assets/BarChart-z9_G2kbT.js                       146.24 kB │ gzip:    51.42 kB │ map:   775.34 kB
+#27 173.7 ../../public/vite/assets/_plugin-vue_export-helper-BTQ8gHAs.js      172.14 kB │ gzip:    64.79 kB │ map:   914.49 kB
+#27 173.7 ../../public/vite/assets/index-BpX6-Frw.js                          175.41 kB │ gzip:    48.82 kB │ map:   778.82 kB
+#27 173.7 ../../public/vite/assets/v3app-DDMMQYpK.js                          265.98 kB │ gzip:    96.51 kB │ map:   425.52 kB
+#27 173.7 ../../public/vite/assets/index-C0ANGRVt.js                          305.54 kB │ gzip:    98.56 kB │ map: 1,153.44 kB
+#27 173.7 ../../public/vite/assets/typing-CHAInjMc.js                         496.04 kB │ gzip:   149.22 kB │ map: 1,724.30 kB
+#27 173.7 ../../public/vite/assets/dashboard-Bk0yyEg0.js                    2,775.53 kB │ gzip:   782.01 kB │ map: 7,886.49 kB
+#27 173.7 ../../public/vite/assets/DashboardIcon-DFLla-PI.js               10,162.53 kB │ gzip: 3,036.40 kB │ map: 2,894.18 kB
+#27 173.7 ✓ built in 2m 11s
+#27 175.1 Build with Vite complete: /app/public/vite
+#27 175.1 The CJS build of Vite's Node API is deprecated. See https://vite.dev/guide/troubleshooting.html#vite-cjs-node-api-deprecated for more details.
+#27 175.1 Browserslist: caniuse-lite is outdated. Please run:
+#27 175.1   npx update-browserslist-db@latest
+#27 175.1   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 Browserslist: caniuse-lite is outdated. Please run:
+#27 175.1   npx update-browserslist-db@latest
+#27 175.1   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 DEPRECATION WARNING: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+#27 175.1 
+#27 175.1 More info: https://sass-lang.com/d/legacy-js-api
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 [@vue/compiler-sfc] ::v-deep usage as a combinator has been deprecated. Use :deep(<inner-selector>) instead of ::v-deep <inner-selector>.
+#27 175.1 
+#27 175.1 
+#27 175.1 (!) Some chunks are larger than 500 kB after minification. Consider:
+#27 175.1 - Using dynamic import() to code-split the application
+#27 175.1 - Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+#27 175.1 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+#27 175.1 
+#27 DONE 219.8s
+
+#28 [pre-builder 18/19] RUN git rev-parse HEAD > /app/.git_sha
+#28 0.189 fatal: not a git repository (or any of the parent directories): .git
+#28 ERROR: process "/bin/sh -c git rev-parse HEAD > /app/.git_sha" did not complete successfully: exit code: 128
+------
+ > [pre-builder 18/19] RUN git rev-parse HEAD > /app/.git_sha:
+0.189 fatal: not a git repository (or any of the parent directories): .git
+------
+
+ 10 warnings found (use docker --debug to expand):
+ - FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 2)
+ - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 13)
+ - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 20)
+ - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 23)
+ - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 114)
+ - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 117)
+ - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 120)
+ - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 17)
+ - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 107)
+ - LegacyKeyValueFormat: "ENV key=value" should be used instead of legacy "ENV key value" format (line 111)
+Dockerfile:90
+--------------------
+  88 |     
+  89 |     # Generate .git_sha file with current commit hash
+  90 | >>> RUN git rev-parse HEAD > /app/.git_sha
+  91 |     
+  92 |     # Remove unnecessary files
+--------------------
+ERROR: failed to build: failed to solve: process "/bin/sh -c git rev-parse HEAD > /app/.git_sha" did not complete successfully: exit code: 128
+##########################################
+### Error
+### Mon, 11 May 2026 18:58:59 GMT
+##########################################
+
+Command failed with exit code 1: docker buildx build --network host -f /etc/easypanel/projects/evolutionapi/chatwoot/code/docker/Dockerfile -t easypanel/evolutionapi/chatwoot --label 'keep=true' --build-arg 'FRONTEND_URL=https://evolutionapi-chatwoot.znvdsb.easypanel.host' --build-arg 'SECRET_KEY_BASE=36zja4lwn1j05tf46v5091i7brxsecw0' --build-arg 'DEFAULT_LOCALE=pt_BR' --build-arg 'FORCE_SSL=false' --build-arg 'ENABLE_ACCOUNT_SIGNUP=true' --build-arg 'REDIS_URL=redis://default@evolutionapi_chatwoot-redis:6379' --build-arg 'REDIS_PASSWORD=od5aeawfz0pfj66duw3o' --build-arg 'REDIS_OPENSSL_VERIFY_MODE=none' --build-arg 'POSTGRES_DATABASE=evolutionapi' --build-arg 'POSTGRES_HOST=evolutionapi_chatwoot-db' --build-arg 'POSTGRES_USERNAME=postgres' --build-arg 'POSTGRES_PASSWORD=zu0kxr252jrp8q91bhfe' --build-arg 'RAILS_MAX_THREADS=5' --build-arg 'NODE_ENV=production' --build-arg 'RAILS_ENV=production' --build-arg 'INSTALLATION_ENV=docker' --build-arg 'TRUSTED_PROXIES=*' --build-arg 'GIT_SHA=1e5dfb1d18ced3517f02970e26df6dd3cf208d9a' /etc/easypanel/projects/evolutionapi/chatwoot/code/
