@@ -32,8 +32,11 @@ class Whatsapp::IncomingMessageBaseService
     # misconfigurations in the Meta business manager account.
     # We use an atomic Redis SET NX to prevent concurrent workers from both
     # processing the same message simultaneously.
-    return if find_message_by_source_id(messages_data.first[:id])
-    return unless lock_message_source_id!
+    # return if find_message_by_source_id(messages_data.first[:id])
+    # return unless lock_message_source_id!
+    
+    # Bypass deduplication for history import
+    true
 
     set_contact
     return unless @contact
