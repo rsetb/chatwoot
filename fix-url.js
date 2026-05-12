@@ -1,4 +1,3 @@
-const INSTANCE = 'rafael';
 const APIKEY = process.env.AUTHENTICATION_API_KEY;
 
 const payload = {
@@ -17,13 +16,30 @@ const payload = {
   signDelimiter: '\n'
 };
 
-fetch('http://127.0.0.1:8080/chatwoot/set/' + INSTANCE, {
-  method: 'POST',
-  headers: { 'Content-Type': 'application/json', apikey: APIKEY },
-  body: JSON.stringify(payload),
+fetch('http://127.0.0.1:8080/instance/fetchInstances', {
+  headers: { apikey: APIKEY }
 })
-  .then(async (r) => {
-    console.log('SET STATUS:', r.status);
-    console.log(await r.text());
+  .then(r => r.json())
+  .then(async data => {
+    if (!data || !Array.isArray(data) || data.length === 0) {
+      console.log('No instances found!');
+      return;
+    }
+    
+    for (const inst of data) {
+      const instanceName = inst.instance.instanceName;
+      console.log('\n========================================');
+      console.log('Updating Chatwoot config for instance:', instanceName);
+      
+      const r = await fetch('http://127.0.0.1:8080/chatwoot/set/' + instanceName, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', apikey: APIKEY },
+        body: JSON.stringify(payload),
+      });
+      
+      console.log('SET STATUS:', r.status);
+      console.log(await r.text());
+      console.log('========================================\n');
+    }
   })
   .catch(console.error);
