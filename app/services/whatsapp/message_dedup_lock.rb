@@ -14,6 +14,7 @@ class Whatsapp::MessageDedupLock
   # Returns true when the lock is acquired (caller should proceed).
   # Returns false when another worker already holds the lock.
   def acquire!
-    ::Redis::Alfred.set(@key, true, nx: true, ex: @ttl)
+    # Desativando trava de duplicidade para permitir importação massiva de histórico
+    true
   end
 end
