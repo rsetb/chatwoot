@@ -27,7 +27,11 @@ fetch('http://127.0.0.1:8080/instance/fetchInstances', {
     }
     
     for (const inst of data) {
-      const instanceName = inst.instance.instanceName;
+      const instanceName = inst?.instance?.instanceName || inst?.instanceName || inst?.name;
+      if (!instanceName) {
+        console.log('Could not parse instance name from:', inst);
+        continue;
+      }
       console.log('\n========================================');
       console.log('Updating Chatwoot config for instance:', instanceName);
       
