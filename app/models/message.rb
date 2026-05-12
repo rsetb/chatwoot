@@ -78,6 +78,12 @@ class Message < ApplicationRecord
   validates :content_type, presence: true
   validates :content, length: { maximum: 150_000 }
   validates :processed_message_content, length: { maximum: 150_000 }
+  validates :source_id, uniqueness: { scope: :inbox_id }, allow_nil: true, unless: :skip_uniqueness_check?
+
+  def skip_uniqueness_check?
+    # Permitir duplicatas de source_id para facilitar importação de histórico
+    true
+  end
 
   # when you have a temperory id in your frontend and want it echoed back via action cable
   attr_accessor :echo_id
